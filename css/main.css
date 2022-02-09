@@ -1,0 +1,51 @@
+.main-image{
+  background: url('https://images.ctfassets.net/pzzgna09n4z0/332ERI87ZSKEeS2Oyguy4Q/1f4fe8db8c0c8dc15e20b52905e03224/img-step-1.jpg?w=1920&fm=webp&q=75') ; 
+  background-size: contain ;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: -10;
+  width: 358px;
+  height: 486px;
+  margin: auto;
+  margin-top: 10rem;
+}
+.steps{
+  position: relative;
+  top: -20rem;
+  left: 18%;
+  font-size: 14px;
+  font-weight: 600;
+}
+.main__text-title{
+  font-family:'NoeDisplay'; 
+  line-height: 1.4;
+  font-size: 3rem;
+  font-weight: 500;
+  top: -21rem;
+  left: 18%;
+  z-index: 10;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.line{
+  display: block;
+  margin-right: 3rem;
+  margin-left: 1rem;
+  height: 2px;
+  width: 16rem;
+  background: #f95b5b;
+  z-index: 10;
+  }
+.main__text-description{
+  position: relative;
+  bottom: 2rem;
+  z-index: 10;
+  top: -18rem;
+  left: 63%;
+  text-transform: uppercase;
+  max-width: 50%;
+  font-weight: 600;
+  line-height: 1.4 ;
+}
