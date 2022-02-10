@@ -1,29 +1,32 @@
 .main-image{
   background: url('https://images.ctfassets.net/pzzgna09n4z0/332ERI87ZSKEeS2Oyguy4Q/1f4fe8db8c0c8dc15e20b52905e03224/img-step-1.jpg?w=1920&fm=webp&q=75') ; 
-  background-size: contain ;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-  z-index: -10;
+  background-size: cover;
+  z-index: -1;
   width: 358px;
   height: 486px;
+  position: relative;
   margin: auto;
   margin-top: 10rem;
+}
+.main__text{
+  position: absolute;
+  left: 6rem;
 }
 .steps{
   position: relative;
   top: -20rem;
-  left: 18%;
+  left: 17%;
   font-size: 14px;
   font-weight: 600;
 }
+
 .main__text-title{
   font-family:'NoeDisplay'; 
   line-height: 1.4;
   font-size: 3rem;
   font-weight: 500;
   top: -21rem;
-  left: 18%;
+  left: 17%;
   z-index: 10;
   position: relative;
   display: flex;
@@ -43,9 +46,38 @@
   bottom: 2rem;
   z-index: 10;
   top: -18rem;
-  left: 63%;
+  left: 44rem;
   text-transform: uppercase;
   max-width: 50%;
   font-weight: 600;
   line-height: 1.4 ;
+}
+.main-right-decoration{
+  display: block;
+  position: absolute;
+  left: 55%;
+  width: 154px;
+  height: 102px;
+  z-index: -2;
+ transform: translateY(-34rem);
+}
+.main-green-decoration{
+display: block;
+position: absolute;
+left: 32%;
+  width: 138px;
+  height: 179px;
+  z-index: -2;
+ transform: translateY(-9rem);
+}
+.main-branch-decoration{
+  position: absolute;
+  left: 55%;
+  width: 102px;
+  height: 192px;
+  z-index: 1;
+ transform: translateY(-36rem);
+}
+.main-nails-styles{
+
 }
