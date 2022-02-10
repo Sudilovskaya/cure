@@ -78,11 +78,13 @@ body{
   
 }
 .hero__text-strong{
-  font-family: 'Northwell';
   position: absolute;
   left: 53%;
   font-size: 3.5rem;
   transform: translateY(-60%) rotate(-16deg);
+}
+.text-strong{
+  font-family: 'Northwell';
   color: #f95b5b;
   font-weight: normal;
   z-index: 100;

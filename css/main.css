@@ -12,19 +12,16 @@
   position: absolute;
   left: 6rem;
 }
-.steps{
+.main__steps{
   position: relative;
   top: -20rem;
   left: 17%;
+}
+.steps{
   font-size: 14px;
   font-weight: 600;
 }
-
-.main__text-title{
-  font-family:'NoeDisplay'; 
-  line-height: 1.4;
-  font-size: 3rem;
-  font-weight: 500;
+.main__title{
   top: -21rem;
   left: 17%;
   z-index: 10;
@@ -32,7 +29,14 @@
   display: flex;
   align-items: center;
 }
+.title{
+  font-family:'NoeDisplay'; 
+  line-height: 1.4;
+  font-size: 3rem;
+  font-weight: 500;
+}
 .line{
+  position: relative;
   display: block;
   margin-right: 3rem;
   margin-left: 1rem;
@@ -62,13 +66,13 @@
  transform: translateY(-34rem);
 }
 .main-green-decoration{
-display: block;
-position: absolute;
-left: 32%;
+  display: block;
+  position: absolute;
+  left: 32%;
   width: 138px;
   height: 179px;
   z-index: -2;
- transform: translateY(-9rem);
+  transform: translateY(-9rem);
 }
 .main-branch-decoration{
   position: absolute;
@@ -79,5 +83,62 @@ left: 32%;
  transform: translateY(-36rem);
 }
 .main-nails-styles{
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+  margin-left: -4rem;
+}
+.main-nails-styles__item{
+  transition: .4s;
+  cursor: pointer;
+  color: #f95b5b;
+  font-family: Northwell;
+  padding-left: 4rem;
+  font-size: 3.6rem;
+  font-weight: 300;
+  line-height: 1.1;
+  opacity: .3;
+}
+.main-nails-styles__item-active{
+  opacity: 1;
+  
+}
+.circled{
+  height: 9vw;
+  width: 11vw;
+  position: absolute;
+  left: 33%;
+  transform:  translateY(-35%);
+}
+.nails__steps_step2-row{
+  display: flex;
+  margin-top: 7rem;
+}
+.nails_steps-image{
+  background-image:url("//images.ctfassets.net/pzzgna09n4z0/2YPxjpfe48qWascM0m42Ke/ece68fdfa93f22222e93e82e3e1144c6/img-step-2-2.jpg?w=1200&fm=webp&q=75");
+ 
+  background-size:cover;
+  width: 100%;
+  height: 640px;
+  flex-basis: 50%;
+}
+.nails__step2-text{
+  background: #c1c9d0;
+  height: 640px;
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
 
+}
+.nails__steps-title{
+    font-size: 2.6rem
+}
+.nails__steps-text-strong{
+  font-size: 4.5rem;
+  transform: translateY(-60%) rotate(-16deg);
+}
+.nails__steps{
+  
 }
