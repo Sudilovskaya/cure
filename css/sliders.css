@@ -1,0 +1,91 @@
+.sliders {
+    background: #8c9a65;
+}
+.sliders-title{
+    padding-top: 5rem;
+    text-align: center;
+    font-size: 2.6rem;
+}
+.sliders-subtitle {
+    max-width: 35%;
+    text-align: center;
+    margin: auto;
+}
+.filter-row {
+    display: flex;
+    cursor: pointer;
+    text-transform: uppercase;
+    justify-content: center;
+    margin-top: 5rem;
+}
+.filter-item {
+margin-right: 3rem;
+margin-left: 3rem;
+}
+.filter-item-active,
+.filter-item:hover{
+border-bottom: 1px solid #fff;
+}
+.swiper-container {
+    margin-top: 5rem;    
+    overflow: visible;
+    cursor: grab;
+    padding-left: 10vw;
+}
+.items-wrapper {
+    display: flex;
+}
+.product {
+    margin-right: 10.6vw;
+    position: relative;
+}
+.product-title{
+    color: #c1c9d0;
+    line-height: 1;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+.product-description{
+    position: absolute;
+    top: 0;
+    left: -1.5rem;
+    transform-origin: top right;
+    transform: translateX(-100%) rotate(-90deg);
+    color: #e5dede;
+    font-size: 14px;
+}
+.product-image {
+    height: 27vw;
+    background-size: cover;
+    width: 20vw ;
+    background-position: 50%;
+}
+.product-image1 {
+    background-image: url("//images.ctfassets.net/pzzgna09n4z0/Q6eaunQzO6IEksG2YwuW8/4db46f864625314819a529fa83b7ca32/Many_Minerals.png?w=960&fm=webp&q=75");
+    height: 27vw;
+    background-size: cover;
+    width: 20vw ;
+    background-position: 50%;
+}
+.product-image2{
+    background-image: url("//images.ctfassets.net/pzzgna09n4z0/7BnfJX0M9iAYOsQm6sGi6q/bf081695a76bed027494c4794a2a86a6/Berry_Preserve.png?w=960&fm=webp&q=75");
+}
+.product-image3{
+    background-image: url("//images.ctfassets.net/pzzgna09n4z0/6qrdej1Q7CI6qq0kememGe/07ca037b77f2e4989ee59bad56b9b2aa/Minty_Matcha.png?w=960&fm=webp&q=75");
+}
+.product-image4 {
+    background-image: url("//images.ctfassets.net/pzzgna09n4z0/HHaHs0YoUMSMMaW6guqGq/229d1b16bbb163302cf4fe8a6a389488/Citrus_Peel.png?w=960&fm=webp&q=75");
+}
+.product-image5 {
+    background-image: url("//images.ctfassets.net/pzzgna09n4z0/1fXPNRq4r60qauWYGIym8O/35bad0334386015267f7bb4fa86187e5/Liquid_Gold_Oil.png?w=960&fm=webp&q=75");
+}
+.product-image6 {
+    background-image: url("//images.ctfassets.net/pzzgna09n4z0/2WeMm09HziyImqOE0gWcc0/38321ba81326d4156d2d39caec8b12a8/Omega_Strawberry.png?w=960&fm=webp&q=75");
+}
+.product-image7 {
+    background-image: url("//images.ctfassets.net/pzzgna09n4z0/4bynJEH0U0IAiy6SwkWqgc/495c69f1771bf7660641f4610c2acea5/Skin_Haven_Lotion.png?w=960&fm=webp&q=75");
+}
+.product-image8 {
+    background-image: url("//images.ctfassets.net/pzzgna09n4z0/2o1mUrrzSE2IwkC60c0oIG/9eb1af35f445e7576b4af3ce15d06b67/The_Carrot_Taker._Balm.png?w=960&fm=webp&q=75");
+}
+

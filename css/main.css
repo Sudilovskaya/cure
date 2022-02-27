@@ -247,17 +247,20 @@ color: #f95b5b;
   margin-top: 3%;
 }
 .bg-image1{
-  height: 570px;
+  height: 600px;
   flex-basis: 50%;
   background-image: url("//images.ctfassets.net/pzzgna09n4z0/5zccoSyaycWemaOomEG84k/c56d1a4fbcbc129abc64c3263e18b7c7/img-mood-2.jpg?w=960&fm=webp&q=75");
   background-size: cover;
   width: 100%;
+  display: block;
+  margin-bottom: 0;
 }
 .bg-image2{
   position: relative;
-  height: 570px;
+  height: 600px;
   flex-basis: 50%;
   background-image: url("//images.ctfassets.net/pzzgna09n4z0/6jL7VD5kHeySwUOgUMaEIK/a588987f07ed54d4372ef909a651755b/img-mood-1.jpg?w=960&fm=webp&q=75");
   background-size: cover;
   width: 100%;
+  display: block;
   }
