@@ -62,10 +62,6 @@ border-bottom: 1px solid #fff;
 }
 .product-image1 {
     background-image: url("//images.ctfassets.net/pzzgna09n4z0/Q6eaunQzO6IEksG2YwuW8/4db46f864625314819a529fa83b7ca32/Many_Minerals.png?w=960&fm=webp&q=75");
-    height: 27vw;
-    background-size: cover;
-    width: 20vw ;
-    background-position: 50%;
 }
 .product-image2{
     background-image: url("//images.ctfassets.net/pzzgna09n4z0/7BnfJX0M9iAYOsQm6sGi6q/bf081695a76bed027494c4794a2a86a6/Berry_Preserve.png?w=960&fm=webp&q=75");
@@ -89,3 +85,46 @@ border-bottom: 1px solid #fff;
     background-image: url("//images.ctfassets.net/pzzgna09n4z0/2o1mUrrzSE2IwkC60c0oIG/9eb1af35f445e7576b4af3ce15d06b67/The_Carrot_Taker._Balm.png?w=960&fm=webp&q=75");
 }
 
+.slider-cards {
+    display: flex;
+    padding-bottom: 5rem;
+    overflow: visible;
+}
+.card {
+    position: relative;
+    margin-right: 1.75vw;
+    background: #fff;
+    padding: 2rem;
+    height: 20vw;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.card-image {
+    height: 6vw;
+    width: 5vw;
+}
+.card-title {
+    color: #000;
+    font-size: 1.5rem;
+    min-width: 15vw;
+    line-height: 1;
+    margin-bottom: .7rem;
+}
+.card-subtitle {
+    color: #c1c9d0;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+}
+.card-cost {
+    color: #000;
+}
+.card-cost-margin{
+   margin-top: 0.5rem;
+}
+.card-cost span{
+    font-size: .6rem;
+text-transform: uppercase;
+padding-left: .5rem;
+}

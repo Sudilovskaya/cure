@@ -22,7 +22,6 @@ body{
   background-size: cover;
   width: 100% ;
   height: 34rem;
-  z-index: -10;
 }
 .logo{
   width: 5.5rem;
@@ -33,11 +32,9 @@ body{
   padding: 2rem 3rem;
   display: flex ;
   justify-content: space-between;
-  z-index: 10;
-  
 }
 .navbar__menu__link{
-  display: flex;
+  display: inline-block;
   text-decoration: none;
   color: #fff;
   font-size: 14px;
@@ -45,27 +42,56 @@ body{
   margin: 0 1.5rem;
   padding: 4px;
 }
-.navbar__menu__link:hover,
-.navbar__menu__link-active {
-  border-bottom: 1px solid #fff ;
+.navbar__menu__link:after{
+  display: block;
+  position: relative;
+  content: "";
+  height: 1px;
+  width: 0%;
+  background-color: #fff;
+  transition: width .4s ease-in-out;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 3px;
+}
+.navbar__menu__link:hover:after {
+  width: 100%;
+}
+.navbar__menu__link-active:after{
+  display: block;
+  content: "";
+  height: 1px;
+  width: 100%;
 }
 .navbar__menu{
-
   display: flex;
   align-items: center;
 }
 .navbar__menu-book{
+  display: inline-block;
   text-decoration: none;
-  border-bottom: 2px solid  red;
   color: #fff;
   font-size: 14px;
   font-weight: 600;
-  display: flex;
   align-items: center;
+}
+.navbar__menu-book:after{
+  display: block;
+  position: relative;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: #f95b5b;
+  transition: width .4s ease-in-out;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 3px;
+}
+.navbar__menu-book:hover:after{
+  width: 0%;
 }
 .hero{
   margin-top: 10%;
-  
 }
 .hero__text{
   display: block;
@@ -105,13 +131,34 @@ body{
   text-transform: uppercase;
   letter-spacing: .75rem;
   font-size: 14px;
-  transition: .4s;
+  transition: .4s ;
 }
+.menu__nav__item:after{
+  display: block;
+  position: absolute;
+  content: "";
+  height: 0px;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  background-color: #f95b5b;
+  transition: height .3s;
+}
+.menu__nav__item:hover:after{
+  width: 100%;
+  height: 2px;
+}
+.menu__nav__item-active:after{
+  display: block;
+  position: absolute;
+  content: "";
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f95b5b;
+}
+.menu__nav__item-active,
 .menu__nav__item:hover{
-  border-bottom: 2px solid #f95b5b;
-  color:#f95b5b;
-}
-.menu__nav__item-active{
-  border-bottom: 2px solid #f95b5b;
-  color:#f95b5b;
+  color: #f95b5b;
 }
