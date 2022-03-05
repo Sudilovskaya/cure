@@ -57,16 +57,14 @@
   line-height: 1.4 ;
 }
 .main-right-decoration{
-  display: block;
   position: absolute;
   left: 55%;
   width: 154px;
   height: 102px;
   z-index: -2;
- transform: translateY(-34rem);
+  transform: translateY(-34rem);
 }
 .main-green-decoration{
-  display: block;
   position: absolute;
   left: 32%;
   width: 138px;
@@ -106,6 +104,7 @@
   height: 9vw;
   width: 11vw;
   position: absolute;
+  z-index: -3;
   left: 33%;
   transform:  translateY(-35%);
 }
@@ -154,7 +153,20 @@
   margin-top: 15%;
   text-decoration: none;
   color: #f95b5b;
-  border-bottom: 2px solid #f95b5b;
+}
+.nails__steps-link:after{
+  display: block;
+  position: relative;
+  content: "";
+  width: 110%;
+  background:#f95b5b;
+  height: 2px;
+  transition: width .4s ease-in-out;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.nails__steps-link:hover:after{
+  width: 0;
 }
 .nails__steps_step3-row{
   display: flex;
@@ -168,7 +180,20 @@
 .nails__steps-link-step3{
   color: #fff;
   opacity: .7;
-  border-bottom: 2px solid #fff;
+}
+.nails__steps-link-step3:after{
+  display: block;
+  position: relative;
+  content: "";
+  background-color: #fff;
+  width: 105%;
+  opacity: .9;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width .4s ease-in-out;
+}
+.nails__steps-link-step3:hover:after{
+  width: 0;
 }
 .nails__step3-text-strong{
   color: #fff;
@@ -233,14 +258,14 @@
 }
 .nails-steps-privilege::before{
   content: "*";
-position: absolute;
-top: 2rem;
-left: -1.5rem;
-font-size: 6rem;
-line-height: .5;
-transform: translateY(25%);
-font-family: Northwell;
-color: #f95b5b;
+  position: absolute;
+  top: 2rem;
+  left: -1.5rem;
+  font-size: 6rem;
+  line-height: .5;
+  transform: translateY(25%);
+  font-family: Northwell;
+  color: #f95b5b;
 }
 .bg-images{
   display: flex;

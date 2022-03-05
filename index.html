@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
-  
+  <script src="js/main.js" defer></script>
 </head>
 <body>
   <header class="header header-image">
@@ -53,9 +53,9 @@
         </div>
     </div>
     <div class="main_images-group">
-    <img src="img/blue-dots-right.png" alt="" class="main-right-decoration">
-    <img src="img/red-branch.png" alt="" class="main-branch-decoration">
-    <img src="img/green.png" alt="" class="main-green-decoration">
+      <img src="img/blue-dots-right.png" alt="" class="main-right-decoration">
+      <img src="img/red-branch.png" alt="" class="main-branch-decoration">
+      <img src="img/green.png" alt="" class="main-green-decoration">
     </div>
     <div class="main-nails-styles">
       <div class="main-nails-styles__item main-nails-styles__item-active">quickie
@@ -64,10 +64,11 @@
           </path>
         </svg>
       </div>
-      <div class="main-nails-styles__item">classic</div>
-      <div class="main-nails-styles__item"> cure</div>
+      <div class="main-nails-styles__item" id="classic">classic</div>
+      <div class="main-nails-styles__item" id="cure"> cure</div>
     </div>
   </main>
+
   <section class="nails__steps">
     <div class="nails__steps_step2-row">
       <div class="nails_steps-image"></div>
@@ -326,12 +327,12 @@
     </div>
     <div class="footer-col-2">
       <div class="footer-text-group1">
-        <p class="footer-details">Privacy Policy</p>
-        <p class="footer-details">Terms of Service</p>
+        <a href="#" ><span class="footer-details"> Privacy Policy </span></a>
+        <a href="#" ><span class="footer-details"> Terms of Service </span></a>
       </div>
       <div class="footer-text-group2">
-        <a href="https://www.instagram.com/curenailco" target="_blank" class="footer-details social-link">Instagram</a>
-        <a href="https://www.facebook.com/curenails/" target="_blank" class="footer-details social-link">Facebook</a>
+        <a href="https://www.instagram.com/curenailco" target="_blank"> <span class="footer-details">Instagram </span> </a>
+        <a href="https://www.facebook.com/curenails/" target="_blank"> <span class="footer-details">Facebook </span> </a>
       </div>
     </div>
  </div>
