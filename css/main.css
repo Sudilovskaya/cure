@@ -7,6 +7,31 @@
   position: relative;
   margin: auto;
   margin-top: 10rem;
+  background-position: center;
+}
+.main-image2{
+  background: url("//images.ctfassets.net/pzzgna09n4z0/nPqHascaA0qWgKK6GeCEQ/50410fea336065f3f8968cfaf4b09ff2/img-step-3-1.jpg?w=1920&fm=webp&q=75") ; 
+  background-size: cover;
+  z-index: -1;
+  width: 358px;
+  height: 486px;
+  position: relative;
+  margin: auto;
+  margin-top: 10rem;
+  background-position: center;
+  display: none;
+}
+.main-image3{
+  background: url("//images.ctfassets.net/pzzgna09n4z0/48GKSxsqWA8CCiy0S2kgAM/43e3bc2b3fed9e826359341bdbe592a4/img-section-1-2.jpg?w=1920&fm=webp&q=75"); 
+  background-size: cover;
+  z-index: -1;
+  width: 358px;
+  height: 486px;
+  position: relative;
+  margin: auto;
+  margin-top: 10rem;
+  background-position: center;
+  display: none;
 }
 .main__text{
   position: absolute;
@@ -87,26 +112,34 @@
   margin-left: -4rem;
 }
 .main-nails-styles__item{
-  transition: .4s;
   cursor: pointer;
   color: #f95b5b;
-  font-family: Northwell;
+  font-family: 'Northwell';
   padding-left: 4rem;
   font-size: 3.6rem;
   font-weight: 300;
   line-height: 1.1;
   opacity: .3;
+  transition: .4s;
+  user-select: none;
+ 
 }
 .main-nails-styles__item-active{
-  opacity: 1;
+  opacity: .99;
 }
 .circled{
   height: 9vw;
   width: 11vw;
   position: absolute;
   z-index: -3;
-  left: 33%;
-  transform:  translateY(-35%);
+  transform: translateX(-90%) translateY(-30%);
+  opacity: 0;
+}
+.quickie-circled{
+  opacity: 1;
+}
+.cure-circled{
+  margin-left: 2%;
 }
 .nails__steps_step2-row{
   display: flex;
