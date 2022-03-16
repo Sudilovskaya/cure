@@ -44,42 +44,30 @@
     width: 100%;
     height: 1px;
 }
-.slider-arrows {
-    margin-top: 15px;
-    text-align: center;
-  }
-  .next, .prev {
-  background: none;
-  border: none;
-  margin: 0 10px;
-  font-size: 30px;
-  cursor: pointer;
-}
-
-.next.disabled, .prev.disabled {
-  opacity: .25;
-  pointer-events: none;
+.slider-wrapper{
+    position: relative;
+    left: 10vw;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 .slider {
- margin-top: 5rem;    
- overflow: hidden;
- cursor: grab;
- padding-left: 10vw;
- height: 27vw;
- 
+    overflow: hidden;
+    height: 27vw;
+    width: 100%;
 }
 .slider-track {
+    position: absolute;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    gap: 5px;
     pointer-events: none;
-    width: 200%;
+    width: 220%;
     height: 100%;
+    top: 0;
+    left: 0;
 }
 .product {
     margin-right: 10.6vw;
     position: relative;
-    flex-shrink: 0;
 }
 .product-title{
     color: #c1c9d0;
@@ -126,17 +114,32 @@
 .product-image8 {
     background-image: url("//images.ctfassets.net/pzzgna09n4z0/2o1mUrrzSE2IwkC60c0oIG/9eb1af35f445e7576b4af3ce15d06b67/The_Carrot_Taker._Balm.png?w=960&fm=webp&q=75");
 }
-
-.slider-cards {
-    display: flex;
-    padding-bottom: 5rem;
+.slider2-wrapper{
+    position: relative;
+    left: 10vw;
+    padding-bottom: 3rem;
+}
+.slider2 {
+    overflow: hidden;
+    height: 27vw;
+    width: 90%;
+}
+.slider2-track {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    pointer-events: none;
+    width: 134%;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
 .card {
     position: relative;
     margin-right: 1.75vw;
     background: #fff;
     padding: 2rem;
-    height: 20vw;
+    height: 19vw;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -160,12 +163,13 @@
 }
 .card-cost {
     color: #000;
+    padding-top: 1rem;
 }
 .card-cost-margin{
    margin-top: 0.5rem;
 }
 .card-cost span{
     font-size: .6rem;
-text-transform: uppercase;
-padding-left: .5rem;
+    text-transform: uppercase;
+    padding-left: .5rem;
 }

@@ -10,47 +10,13 @@ const mainImage3 = document.querySelector('.main-image3')
 
 let slider = document.querySelector('.slider')
 let sliderTrack = slider.querySelector('.slider-track')
-// let slides = slider.querySelectorAll('.product')
-// let arrows = slider.querySelector('.slider-arrows')
+
+let slider2 = document.querySelector('.slider2')
+let sliderTrack2 = slider2.querySelector('.slider2-track')
 
 let pressed = false
 let startx
 let x
-
-slider.addEventListener('mousedown', (e) => {
-    pressed = true;
-    startx = e.offsetX - sliderTrack.offsetLeft ; //получаем начальную позицию мыши
-    slider.style.cursor = 'grabbing';
-});
-
-slider.addEventListener('mouseup', () => {
-    slider.style.cursor = 'grab';
-});
-
-window.addEventListener('mouseup', () => {
-    pressed = false;
-});
-
-slider.addEventListener('mousemove', (e) =>{
-    if(!pressed) return;
-    e.preventDefault();
-
-    x = e.offSetX
-
-    sliderTrack.style.left = `${x - startx}px`;
-})
-
-// let prev = arrows.children[0]
-// let next = arrows.children[1]
-// let  slideWidth = slides[0].offsetWidth
-// let  slideIndex = 0
-// let  posInit = 0
-// let  posX1 = 0
-// let  posX2 = 0
-// let  posFinal = 0
-// let  posThreshold = slideWidth * .35
-// let  trfRegExp = /[-0-9.]+(?=px)/
-// sliderTrack.style.transform = 'translate3d(0px, 0px, 0px)'
 
 quickieBtn.addEventListener('click', () => {
     mainImage2.style.display = 'none'
@@ -94,38 +60,113 @@ cureBtn.addEventListener('click', () => {
     cureCircled.style.opacity = '1'
 })
 
-// const slide = () => {
-//     sliderTrack.style.transition = 'transform .5s'
-//     sliderTrack.style.transform = `translate3d(-${slideIndex * slideWidth}px, 0px, 0px)`
-//     prev.classList.toggle('disabled', slideIndex === 0)
-//     next.classList.toggle('disabled', slideIndex === --slides.length)
-// }
+// начало слайдера
+slider.addEventListener('mousedown', (e) => {
+    pressed = true;
+    startx = e.offsetX - sliderTrack.offsetLeft ; //получаем начальную позицию мыши
+    slider.style.cursor = 'grabbing';
+});
 
-// const getEvent = (event) => {
-//     event.type.search('touch') !== -1 ? event.touches[0] : event
-// }
+slider.addEventListener('mouseenter', () => {
+    slider.style.cursor = 'grab'
+});
 
-// const swipeStart = () => {
-//     let evt = getEvent()
-     
-//     posInit = posX1 = evt.clientX  // берем начальную позицию курсора по оси Х
-//     sliderTrack.style.transition = '' // убираем плавный переход, чтобы track двигался за курсором без задержки т.к. он будет включаться в функции slide()
+slider.addEventListener('mouseup', () => {
+    slider.style.cursor = 'grab';
+});
 
-//     document.addEventListener('touchmove', swipeAction);
-//     document.addEventListener('touchend', swipeEnd);
-//     document.addEventListener('mousemove', swipeAction);
-//     document.addEventListener('mouseup', swipeEnd);
-// }
+window.addEventListener('mouseup', () => {
+    pressed = false;
+});
 
-// const swipeAction = () => {
-//     let evt = getEvent()
-//     let style = sliderTrack.style.transform
-//     let transform = +style.match(trfRegExp)[0]
+slider.addEventListener('mousemove', (e) =>{
+    if(!pressed) return;
 
-//     sliderTrack.style.transform = 'translate3d(0px, 0px, 0px)'
+    x = e.offsetX
 
-//     posX2 = posX1 - evt.clientX
-//     posX1 = evt.clientX
+    sliderTrack.style.left = `${x - startx}px`;  //получаем координаты относительно левого края внутреннего блока и вычитаем из смещения родительского блока
+    checkBoundary()
+})
 
-//     sliderTrack.style.transform = `translate3d(${transform - posX2}px, 0px, 0px)`
-// }
+//проверяем границы
+const checkBoundary = () => {  
+    let outer = slider.getBoundingClientRect()
+    let inner = sliderTrack.getBoundingClientRect()
+
+    if(parseInt(sliderTrack.style.left) > 0){
+        sliderTrack.style.left = '';
+    } else if (inner.right < outer.right){
+        sliderTrack.style.left = `-${inner.width - outer.width}px`
+    }
+}
+
+// для сенсорных экранов
+slider.addEventListener('touchstart', (e) => {   
+    pressed = true;
+    startx = e.targetTouches[0].clientX - sliderTrack.offsetLeft;
+}, {passive: true});
+
+
+slider.addEventListener('touchmove', (e) => {
+    if(!pressed) return;
+    x = e.targetTouches[0].clientX;
+
+    sliderTrack.style.left = `${x - startx}px`;  
+    checkBoundary();
+}, {passive: true});
+
+
+// начало второго слайдера
+slider2.addEventListener('mousedown', (e) => {
+    pressed = true;
+    startx = e.offsetX - sliderTrack2.offsetLeft ; //получаем начальную позицию мыши
+    slider2.style.cursor = 'grabbing';
+
+});
+
+slider2.addEventListener('mouseenter', () => {
+    slider2.style.cursor = 'grab'
+});
+
+slider2.addEventListener('mouseup', () => {
+    slider2.style.cursor = 'grab';
+});
+
+window.addEventListener('mouseup', () => {
+    pressed = false;
+});
+
+slider2.addEventListener('mousemove', (e) =>{
+    if(!pressed) return;
+
+    x = e.offsetX
+
+    sliderTrack2.style.left = `${x - startx}px`;  //получаем координаты относительно левого края внутреннего блока и вычитаем из смещения родительского блока
+    checkBoundary2()
+})
+
+const checkBoundary2 = () => {  
+    let outer = slider2.getBoundingClientRect()
+    let inner = sliderTrack2.getBoundingClientRect()
+
+    if(parseInt(sliderTrack2.style.left) > 0){
+        sliderTrack2.style.left = '';
+    } else if (inner.right < outer.right){
+        sliderTrack2.style.left = `-${inner.width - outer.width}px`
+    }
+}
+
+// для сенсорных экранов
+slider2.addEventListener('touchstart', (e) => {   
+    pressed = true;
+    startx = e.targetTouches[0].clientX - sliderTrack2.offsetLeft;
+}, {passive: true});
+
+
+slider2.addEventListener('touchmove', (e) => {
+    if(!pressed) return;
+    x = e.targetTouches[0].clientX;
+
+    sliderTrack2.style.left = `${x - startx}px`;  
+    checkBoundary2();
+}, {passive: true});
