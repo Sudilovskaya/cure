@@ -19,9 +19,9 @@ let startx
 let x
 
 quickieBtn.addEventListener('click', () => {
-    mainImage2.style.display = 'none'
-    mainImage3.style.display = 'none'
-    mainImage.style.display = 'block'
+    mainImage2.style.opacity = '0'
+    mainImage3.style.opacity = '0'
+    mainImage.style.opacity = '1'
 
     classicBtn.style.opacity = '.3'
     cureBtn.style.opacity = '.3'
@@ -33,9 +33,9 @@ quickieBtn.addEventListener('click', () => {
 })
 
 classicBtn.addEventListener('click', () => {
-    mainImage2.style.display = 'block'
-    mainImage.style.display = 'none'
-    mainImage3.style.display = 'none'
+    mainImage2.style.opacity = '1'
+    mainImage.style.opacity = '0'
+    mainImage3.style.opacity = '0'
 
     classicBtn.style.opacity = '.99'
     cureBtn.style.opacity = '.3'
@@ -47,9 +47,9 @@ classicBtn.addEventListener('click', () => {
 })
 
 cureBtn.addEventListener('click', () => {
-    mainImage3.style.display = 'block'
-    mainImage2.style.display = 'none'
-    mainImage.style.display = 'none'
+    mainImage3.style.opacity = '1'
+    mainImage2.style.opacity = '0'
+    mainImage.style.opacity = '0'
 
     cureBtn.style.opacity = '.99'
     classicBtn.style.opacity = '.3'

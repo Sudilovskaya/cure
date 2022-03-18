@@ -84,6 +84,13 @@
     color: #e5dede;
     font-size: 14px;
 }
+.add-me-text{
+    position: absolute;
+    top: -1.5rem;
+    right: -2rem;
+    transform: rotate(-16deg);
+    font-size: 3.6rem;
+}
 .product-image {
     height: 27vw;
     background-size: cover;
@@ -163,10 +170,12 @@
 }
 .card-cost {
     color: #000;
-    padding-top: 1rem;
+    
+    margin-bottom: 0;
 }
 .card-cost-margin{
-   margin-top: 0.5rem;
+   padding-top: 1rem;
+   margin-bottom: 0;
 }
 .card-cost span{
     font-size: .6rem;

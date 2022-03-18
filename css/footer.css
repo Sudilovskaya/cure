@@ -1,6 +1,6 @@
 .cooperation-wrapper {
     position: relative;
-    height: 47vw;
+    height: 42vw;
 }
 .cooperation-image-bg {
     background-image: url("//images.ctfassets.net/pzzgna09n4z0/quSoOCXaW46MSu0S8ecme/a0c58fea4d217eb737aef288fc412c77/Img_3.png?w=1920&fm=webp&q=75");
@@ -81,6 +81,25 @@
     transform: translateX(-20%) translateY(-33%) rotate(-16deg);
     font-size: 3.6rem;
     font-weight: 300;
+}
+.email-link{
+    text-decoration: none;
+    color: #fff;
+    margin-top: 1rem;
+}
+.email-link:after{
+    display: block;
+    position: relative;
+    content: "";
+    background: #fff;
+    width: 0;
+    height: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width .3s ease-in-out;
+}
+.email-link:hover:after{
+    width: 100%;
 }
 .footer{
     background: #e4d9d9;
