@@ -18,6 +18,42 @@ let pressed = false
 let startx
 let x
 
+const animItems = document.querySelectorAll('._anim-items')
+
+if  (animItems.length > 0) {
+    
+    const animOnScroll = () => {
+        for (let index = 0; index < animItems.length; index++) {
+            const animItem = animItems[index]
+            const animItemHeight = animItem.offsetHeight
+            const animItemOffset = offset(animItem).top
+            const animStart = 4
+
+            let animItemPoint = window.innerHeight - animItemHeight / animStart
+
+            if(animItemHeight > window.innerHeight) {
+                animItemPoint = window.innerHeight - window.innerHeight / animStart
+            }
+            if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)){
+                animItem.classList.add('_active')
+            } else {
+                if (animItem.classList.contains('_anim-no-hide')){
+                animItem.classList.remove('_active')
+                }
+            }
+
+        }
+    }
+    const offset = (el) => {
+        const rect = el.getBoundingClientRect(),
+            scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+            scrollTop = window.pageYOffset || document.documentElement.scrollTop
+        return {top: rect.top + scrollTop, left: rect.left + scrollLeft}
+    }
+    animOnScroll()
+    window.addEventListener('scroll', animOnScroll)
+}
+
 quickieBtn.addEventListener('click', () => {
     mainImage2.style.opacity = '0'
     mainImage3.style.opacity = '0'
@@ -34,6 +70,7 @@ quickieBtn.addEventListener('click', () => {
 
 classicBtn.addEventListener('click', () => {
     mainImage2.style.opacity = '1'
+    // mainImage2.style.display = 'flex'
     mainImage.style.opacity = '0'
     mainImage3.style.opacity = '0'
 

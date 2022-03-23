@@ -29,9 +29,15 @@ body{
 }
 .header-image{
   background-image: url('//images.ctfassets.net/pzzgna09n4z0/3z9cRfW6cNvemd8ZphHmKz/8f5e975f06ae08e4c16772557b82fe97/Img_hero.jpg?w=2420&fm=webp&q=75');
-  background-size: cover;
+  background-size: cover;  
+  background-position: center;
+  background-repeat: no-repeat;
   width: 100% ;
-  height: 34rem;
+  height: 100vh;
+  transition: all .8s ease;
+}
+.header-image._active{
+  background-size: 150%;
 }
 .logo{
   width: 5.5rem;
@@ -101,7 +107,7 @@ body{
   width: 0%;
 }
 .hero{
-  margin-top: 10%;
+  margin-top: 25vh;
 }
 .hero__text{
   display: block;
@@ -111,7 +117,6 @@ body{
   font-size: 2.6rem;
   line-height: 1.4;
   margin: 0;
-  
 }
 .hero__text-strong{
   position: absolute;
