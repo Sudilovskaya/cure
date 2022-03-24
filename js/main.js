@@ -27,7 +27,7 @@ if  (animItems.length > 0) {
             const animItem = animItems[index]
             const animItemHeight = animItem.offsetHeight
             const animItemOffset = offset(animItem).top
-            const animStart = 4
+            const animStart = 3
 
             let animItemPoint = window.innerHeight - animItemHeight / animStart
 
@@ -37,13 +37,13 @@ if  (animItems.length > 0) {
             if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)){
                 animItem.classList.add('_active')
             } else {
-                if (animItem.classList.contains('_anim-no-hide')){
+                if (!animItem.classList.contains('_anim-no-hide')) {
                 animItem.classList.remove('_active')
-                }
             }
-
+          }
         }
     }
+    //if (animItem.classList.contains('_anim-no-hide'))
     const offset = (el) => {
         const rect = el.getBoundingClientRect(),
             scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
@@ -53,6 +53,8 @@ if  (animItems.length > 0) {
     animOnScroll()
     window.addEventListener('scroll', animOnScroll)
 }
+
+//переключение фотографий
 
 quickieBtn.addEventListener('click', () => {
     mainImage2.style.opacity = '0'

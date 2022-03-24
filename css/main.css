@@ -188,8 +188,7 @@
   transition: all 1.5s ease;
 }
 .nails_steps-image._active{
-  background-size:102%;
-
+  background-size:102%
 }
 .nails__step2-wrapper{
   background: #c1c9d0;
@@ -248,15 +247,18 @@
   display: block;
   position: relative;
   content: "";
-  width: 110%;
+  width: 0%;
   background:#f95b5b;
   height: 2px;
-  transition: width .4s ease-in-out;
+  transition: width .5s ease-in-out;
   left: 50%;
   transform: translateX(-50%);
 }
 .nails__steps-link:hover:after{
-  width: 0;
+  width: 0 !important;
+}
+.nails__steps-link._active:after{
+  width: 110%;
 }
 .nails__steps_step3-row{
   display: flex;
@@ -272,15 +274,7 @@
   opacity: .7;
 }
 .nails__steps-link-step3:after{
-  display: block;
-  position: relative;
-  content: "";
   background-color: #fff;
-  width: 105%;
-  opacity: .9;
-  left: 50%;
-  transform: translateX(-50%);
-  transition: width .4s ease-in-out;
 }
 .nails__steps-link-step3:hover:after{
   width: 0;
@@ -339,19 +333,27 @@
 .strong-text-block{
   display: flex;
   flex-basis: 50%;
-  transform: translateY(100%);
-  transition: all .8s ease;
-}
-.strong-text-block._active{
-  transform: translateY(0);
+  flex-direction: column;
 }
 .nails-steps-description{
   justify-content: start;
   display: flex;
 }
 .steps__text-strong{
+  display: inline-block;
+  position: relative;
   font-size: 3.6rem;
-  transform:  translateY(-80%) translateX(50%) rotate(-16deg);
+  top: -70%;
+  left: 20%;
+  margin: 0;
+  transform: translateY(170%) rotate(-16deg);
+  transition: all .8s ease;
+}
+.steps__text-strong._active{
+transform: translateY(0) rotate(-16deg);
+} 
+.steps__text-strong.strong-item{
+  left: 35%;
 }
 .nails-steps-privilege-text{
   text-transform: uppercase;
@@ -381,23 +383,34 @@
 }
 .bg-images{
   display: flex;
-  margin-top: 3%;
 }
 .bg-image1{
   height: 600px;
   flex-basis: 50%;
   background-image: url("//images.ctfassets.net/pzzgna09n4z0/5zccoSyaycWemaOomEG84k/c56d1a4fbcbc129abc64c3263e18b7c7/img-mood-2.jpg?w=960&fm=webp&q=75");
-  background-size: cover;
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: center;
   width: 100%;
   display: block;
   margin-bottom: 0;
+  transition: all 1.5s ease;
+}
+.bg-image1._active{
+  background-size:102%
 }
 .bg-image2{
   position: relative;
   height: 600px;
   flex-basis: 50%;
   background-image: url("//images.ctfassets.net/pzzgna09n4z0/6jL7VD5kHeySwUOgUMaEIK/a588987f07ed54d4372ef909a651755b/img-mood-1.jpg?w=960&fm=webp&q=75");
-  background-size: cover;
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: center;
   width: 100%;
   display: block;
-  }
+  transition: all 1.5s ease;
+}
+.bg-image2._active{
+  background-size:102%;
+}
