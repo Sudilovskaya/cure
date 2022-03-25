@@ -1,0 +1,19 @@
+@media (max-width: 810px){
+    .navbar__menu{
+        display: none;
+    }
+    .navbar__menu-book{
+        display: none;
+    }
+    .logo{
+        width: 4.5rem;
+        height: 1.5rem;
+    }
+    .hero__text-strong{
+        font-size: 3rem;
+        left: 56%;
+    }
+    .header-image{
+        height: 80vh;
+    }
+}

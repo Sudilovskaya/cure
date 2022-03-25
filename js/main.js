@@ -7,6 +7,11 @@ const cureCircled = document.querySelector('.cure-circled')
 const mainImage = document.querySelector('.main-image')
 const mainImage2 = document.querySelector('.main-image2')
 const mainImage3 = document.querySelector('.main-image3')
+const animItems = document.querySelectorAll('._anim-items')
+
+const burgerBtn = document.querySelector('.burger-menu')
+const mobileMenu = document.querySelector('.opened-menu')
+const burgerLines = document.querySelectorAll('.burger-line')
 
 let slider = document.querySelector('.slider')
 let sliderTrack = slider.querySelector('.slider-track')
@@ -18,8 +23,13 @@ let pressed = false
 let startx
 let x
 
-const animItems = document.querySelectorAll('._anim-items')
+//мобильное меню
+burgerBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('_active')
+    burgerLines.classList.add ('_active')
+})
 
+//анимация
 if  (animItems.length > 0) {
     
     const animOnScroll = () => {
@@ -43,7 +53,7 @@ if  (animItems.length > 0) {
           }
         }
     }
-    //if (animItem.classList.contains('_anim-no-hide'))
+
     const offset = (el) => {
         const rect = el.getBoundingClientRect(),
             scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
@@ -55,7 +65,6 @@ if  (animItems.length > 0) {
 }
 
 //переключение фотографий
-
 quickieBtn.addEventListener('click', () => {
     mainImage2.style.opacity = '0'
     mainImage3.style.opacity = '0'
