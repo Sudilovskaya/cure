@@ -25,8 +25,10 @@ body{
   overflow-x: hidden;
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.5;
-  scroll-behavior: smooth; 
+  line-height: 1.5; 
+}
+body._lock{
+  overflow: hidden;
 }
 .header-image{
   background-image: url('//images.ctfassets.net/pzzgna09n4z0/3z9cRfW6cNvemd8ZphHmKz/8f5e975f06ae08e4c16772557b82fe97/Img_hero.jpg?w=2420&fm=webp&q=75');
@@ -105,74 +107,10 @@ body{
   width: 0%;
 }
 .burger-menu{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: fixed;
-  z-index: 13;
-  cursor: pointer;
-  right: 3rem;
+  display: none;
 }
-.burger-line{
-  border: 1px solid #fff;
-  background-color: #fff;
-  width: 1.5rem;
-  margin-bottom: 3px;
-  align-self: center;
-}
-.burger-line._active{
-  transform: rotate(45deg);
-}
-.mobile-menu-page{
-  display: block;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  overflow-y: scroll;
-}
-.opened-menu{
-  position: fixed;
-  z-index: 12;
-  opacity: 0;
-  background: #c1c9d0;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  transition: all .4s;
-}
-.opened-menu._active{
-  opacity: 1;
-}
-.navbar-opened-menu{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-.navbar-opened-menu>.navbar__menu__link{
-  font-size: 2rem;
-  transform: translateY(300%);
-  transition: all .8s ease;
-  transition-delay: 1s;
-}
-.navbar-opened-menu>.navbar__menu__link._active{
-  transform: translateY(0);
-}
-.opened-menu>.header-logo{
-  padding: 2rem 3rem;
-  position: absolute;
-}
-.opened-menu>.navbar__menu-book{
-  display: block;
-  align-self: center;
-  margin-bottom: 3rem;
+.mobile-menu{
+  display: none;
 }
 .hero{
   margin-top: 25vh;
@@ -201,12 +139,12 @@ body{
 .menu__nav{
   position: absolute;
   display: flex;
+  background-color: #fff;
   justify-content: center;
   left: 50%;
   transform: translateX(-50%) translateY(-50%) ;
 }
 .menu__nav__item{
-  background-color: #fff;
   padding: 1rem 2rem;
   color: #c1c9d0;
   position: relative;
@@ -214,7 +152,7 @@ body{
   text-transform: uppercase;
   letter-spacing: .75rem;
   font-size: 14px;
-  transition: .4s ;
+  transition: all .4s ease;
 }
 .menu__nav__item:after{
   display: block;

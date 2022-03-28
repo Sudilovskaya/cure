@@ -1,35 +1,16 @@
-const quickieBtn = document.getElementById('quickie')
-const classicBtn = document.getElementById('classic')
-const cureBtn = document.getElementById('cure')
-const quickieCircled = document.querySelector('.quickie-circled')
-const classicCircled = document.querySelector('.classic-circled')
-const cureCircled = document.querySelector('.cure-circled')
-const mainImage = document.querySelector('.main-image')
-const mainImage2 = document.querySelector('.main-image2')
-const mainImage3 = document.querySelector('.main-image3')
-const animItems = document.querySelectorAll('._anim-items')
-
+// мобильное меню
 const burgerBtn = document.querySelector('.burger-menu')
-const mobileMenu = document.querySelector('.opened-menu')
-const burgerLines = document.querySelectorAll('.burger-line')
+const mobileMenu = document.querySelector('.mobile-menu')
 
-let slider = document.querySelector('.slider')
-let sliderTrack = slider.querySelector('.slider-track')
-
-let slider2 = document.querySelector('.slider2')
-let sliderTrack2 = slider2.querySelector('.slider2-track')
-
-let pressed = false
-let startx
-let x
-
-//мобильное меню
 burgerBtn.addEventListener('click', () => {
+    document.body.classList.toggle('_lock')
     mobileMenu.classList.toggle('_active')
-    burgerLines.classList.add ('_active')
+    burgerBtn.classList.toggle('_active')
 })
 
 //анимация
+const animItems = document.querySelectorAll('._anim-items')
+
 if  (animItems.length > 0) {
     
     const animOnScroll = () => {
@@ -65,6 +46,16 @@ if  (animItems.length > 0) {
 }
 
 //переключение фотографий
+const quickieBtn = document.getElementById('quickie')
+const classicBtn = document.getElementById('classic')
+const cureBtn = document.getElementById('cure')
+const quickieCircled = document.querySelector('.quickie-circled')
+const classicCircled = document.querySelector('.classic-circled')
+const cureCircled = document.querySelector('.cure-circled')
+const mainImage = document.querySelector('.main-image')
+const mainImage2 = document.querySelector('.main-image2')
+const mainImage3 = document.querySelector('.main-image3')
+
 quickieBtn.addEventListener('click', () => {
     mainImage2.style.opacity = '0'
     mainImage3.style.opacity = '0'
@@ -109,6 +100,13 @@ cureBtn.addEventListener('click', () => {
 })
 
 // начало слайдера
+let slider = document.querySelector('.slider')
+let sliderTrack = slider.querySelector('.slider-track')
+
+let pressed = false
+let startx
+let x
+
 slider.addEventListener('mousedown', (e) => {
     pressed = true;
     startx = e.offsetX - sliderTrack.offsetLeft ; //получаем начальную позицию мыши
@@ -165,6 +163,9 @@ slider.addEventListener('touchmove', (e) => {
 
 
 // начало второго слайдера
+let slider2 = document.querySelector('.slider2')
+let sliderTrack2 = slider2.querySelector('.slider2-track')
+
 slider2.addEventListener('mousedown', (e) => {
     pressed = true;
     startx = e.offsetX - sliderTrack2.offsetLeft ; //получаем начальную позицию мыши
