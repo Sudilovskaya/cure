@@ -71,10 +71,10 @@ quickieBtn.addEventListener('click', () => {
 })
 
 classicBtn.addEventListener('click', () => {
-    mainImage2.style.opacity = '1'
-    // mainImage2.style.display = 'flex'
-    mainImage.style.opacity = '0'
-    mainImage3.style.opacity = '0'
+    // mainImage2.style.opacity = '1'
+    // mainImage.style.opacity = '0'
+    // mainImage3.style.opacity = '0'
+    mainImage.classList.add ('_classic')
 
     classicBtn.style.opacity = '.99'
     cureBtn.style.opacity = '.3'

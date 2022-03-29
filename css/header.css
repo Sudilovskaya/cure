@@ -43,6 +43,8 @@ body._lock{
   width: 5.5rem;
   height: 2rem;
   transition: .4s;
+  position: relative;
+  z-index: 12;
 }
 .navbar{
   padding: 2rem 3rem;

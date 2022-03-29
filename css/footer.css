@@ -1,6 +1,6 @@
 .cooperation-wrapper {
     position: relative;
-    height: 42vw;
+    height: 42vmax;
 }
 .cooperation-image-bg {
     background-image: url("//images.ctfassets.net/pzzgna09n4z0/quSoOCXaW46MSu0S8ecme/a0c58fea4d217eb737aef288fc412c77/Img_3.png?w=1920&fm=webp&q=75");
@@ -10,8 +10,7 @@
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    top: -150px;
-    height: 860px;
+    height: 44vmax;
     transition: all 1.3s ease;
 }
 .cooperation-text {
@@ -28,21 +27,21 @@
 .cooperation-text-group {
     display: flex;
     justify-content: space-between;
-    margin-right: 7rem;
-    margin-left: 7rem;
+    margin-right: 6vmax;
+    margin-left: 7vmax;
 }
 .title-wrapper{
     display: flex;
     flex-direction: column;
-    margin-left: 7rem;
+    margin-left: 7vmax;
 }
 .title-wrapper2{
     display: flex;
     flex-direction: column;
-    margin-top: 7rem;
+    margin-top: 7vmax;
 }
 .cooperation-title {
-    font-size: 3rem;
+    font-size: 3.6vmax;
     line-height: 1.4;
     text-align: left;
     font-family: 'NoeDisplay';
@@ -61,7 +60,7 @@
     font-weight: 600;
     display: inline-block;
     height: 20px;
-    margin-top: 4rem;
+    margin-top: 4vmax;
     transform: translateY(150%);
     transition: all .8s ease;
 }
@@ -88,7 +87,7 @@
 }
 .cooperation-contact {
     display: flex;
-    margin-top: 3rem;
+    margin-top: 3vmax;
     transform: translateY(130%);
     transition: all .8s ease;
 }
@@ -99,10 +98,11 @@
     position: absolute;
     z-index: -1 !important;
     transform: translateX(-20%) translateY(-33%) rotate(-16deg);
-    font-size: 3.6rem;
+    font-size: 4vmax;
     font-weight: 300;
 }
 .email-link{
+    font-size: 1.3vmax;
     text-decoration: none;
     color: #fff;
     margin-top: 1rem;
@@ -129,14 +129,14 @@
 .footer-cols-wrapper{
     display: flex;
     justify-content: space-between;
-    margin-right: 7rem;
-    margin-left: 7rem;
-    padding-top: 5rem;
+    margin-right: 7vmax;
+    margin-left: 7vmax;
+    padding-top: 5vmax;
 }
 .footer-title {
     line-height: 1.4;
     font-family: 'NoeDisplay';
-    font-size: 1.5rem;
+    font-size: 1.9vmax;
     font-weight: 500;
     letter-spacing: .1rem;
     margin: 0;
@@ -148,7 +148,7 @@
     display: inline-block;
     font-weight: 500;
     font-family: 'NoeDisplay';
-    font-size: 1.5rem;
+    font-size: 1.9vmax;
     margin-top: 0;
     cursor: pointer;
 }
@@ -179,7 +179,7 @@
 }
 .footer-details {
     font-weight: 600;
-    font-size: .75rem;
+    font-size: 1vmax;
     margin: 0;
     margin-bottom: 1rem;
     letter-spacing: .05rem;
@@ -206,11 +206,11 @@
     flex-direction: column;
 }
 .footer-end {
-    font-size: 1.5rem;
+    font-size: 1.9vmax;
     font-family: 'NoeDisplay';
     font-weight: 500;
     text-align: right;
-    margin-right: 7rem;
-    padding-bottom: 5rem;
+    margin-right: 7vmax;
+    padding-bottom: 5vmax;
 }
 
