@@ -1,5 +1,5 @@
 
-@media (max-width: 820px){
+@media (max-width: 830px){
     .navbar__menu{
         display: none;
     }
@@ -93,14 +93,10 @@
         align-self: center;
         margin-bottom: 3rem;
       }
+      .nails__steps-title {
+        width: 140%;
+      }
 
-      .nails_steps-image, .nails__step2-wrapper, .nails__step3-wrapper, .nails__step3-wrapper{
-        width: 100%;
-        height: 380px;
-      }
-      .title{
-        font-size: 2rem;
-      }
       .nails__steps-link{
           font-size: .8rem;
       }
@@ -120,10 +116,13 @@
       .nails-steps-privilege{
           margin-bottom: 0;
       }
-      .bg-image{
-        height: 380px;
-      }
       .sliders-subtitle{
       font-size: 1.1vmax;
+      }
+      .main-nails-styles{
+        padding-top: 0;
+      }
+      .main-image{
+        margin-top: 3vw;
       }
 }

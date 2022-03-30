@@ -29,7 +29,7 @@
     cursor: pointer;
     text-transform: uppercase;
     justify-content: center;
-    margin-top: 5rem;
+    margin-top: 6.5vw;
 }
 .filter-item {
     margin-right: 3vmax;
@@ -61,8 +61,8 @@
 .slider-wrapper{
     position: relative;
     left: 10vw;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-top: 6.5vw;
+    margin-bottom: 6.5vw;
 }
 .slider {
     overflow: hidden;
@@ -86,7 +86,7 @@
 .product-title{
     color: #c1c9d0;
     line-height: 1;
-    font-size: 1.5rem;
+    font-size: 2vw;
     margin-top: 1rem;
 }
 .product-description{
@@ -96,14 +96,14 @@
     transform-origin: top right;
     transform: translateX(-100%) rotate(-90deg);
     color: #e5dede;
-    font-size: 14px;
+    font-size: 1.1vmax;
 }
 .add-me-text{
     position: absolute;
     top: -1.5rem;
     right: -2rem;
     transform: rotate(-16deg);
-    font-size: 3.6rem;
+    font-size: 4.3vmax;
 }
 .product-image {
     height: 27vw;
@@ -143,7 +143,7 @@
 .slider2 {
     overflow: hidden;
     height: 27vw;
-    width: 90%;
+    width: 96%;
 }
 .slider2-track {
     position: absolute;
@@ -159,32 +159,32 @@
     position: relative;
     margin-right: 1.75vw;
     background: #fff;
-    padding: 2rem;
+    padding: 2vw;
     height: 19vw;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 }
 .card-image {
-    height: 6vw;
+    height: 6vmax;
     width: 5vw;
 }
 .card-title {
     color: #000;
-    font-size: 1.5rem;
+    font-size: 1.8vw;
     min-width: 15vw;
     line-height: 1;
-    margin-bottom: .7rem;
+    margin-bottom: .7vw;
 }
 .card-subtitle {
     color: #c1c9d0;
-    font-size: 14px;
+    font-size: 1.3vw;
     font-weight: 400;
     margin: 0;
 }
 .card-cost {
+    font-size: 1.5vw;
     color: #000;
-    
     margin-bottom: 0;
 }
 .card-cost-margin{
