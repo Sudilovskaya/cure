@@ -55,7 +55,13 @@ const cureCircled = document.querySelector('.cure-circled')
 const mainImage = document.querySelector('.main-image')
 const mainImage2 = document.querySelector('.main-image2')
 const mainImage3 = document.querySelector('.main-image3')
+let offset = mainImage.offsetWidth
 
+const offsetF = () => {
+    mainImage2.style.transform = `translate3d(${offset}px, 0px, 0px)` 
+    mainImage3.style.transform = `translate3d(-${offset}px, 0px, 0px)` 
+}
+offsetF()
 
 quickieBtn.addEventListener('click', () => {
     mainImage2.style.opacity = '0'
@@ -97,6 +103,7 @@ cureBtn.addEventListener('click', () => {
     mainImage.style.opacity = '0'
     
     let offset = mainImage.offsetWidth
+
     mainImage3.style.transform = `translate3d(-${offset}px, 0px, 0px)` 
 
     cureBtn.style.opacity = '.99'

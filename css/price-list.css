@@ -62,7 +62,7 @@
 .title-wrapper{
   flex-basis: 75%;
   position: relative;
-  margin-left: 2.5vw !important;
+  margin-left: 2.5vw;
 }
 .price-wrapper{
   display: flex;

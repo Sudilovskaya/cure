@@ -30,12 +30,13 @@
     margin-right: 6vmax;
     margin-left: 7vmax;
 }
-.title-wrapper{
+.footer-title-wrapper{
     display: flex;
     flex-direction: column;
     margin-left: 7vmax;
+    position: relative;
 }
-.title-wrapper2{
+.footer-title-wrapper2{
     display: flex;
     flex-direction: column;
     margin-top: 7vmax;
