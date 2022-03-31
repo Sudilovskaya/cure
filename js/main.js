@@ -56,6 +56,7 @@ const mainImage = document.querySelector('.main-image')
 const mainImage2 = document.querySelector('.main-image2')
 const mainImage3 = document.querySelector('.main-image3')
 
+
 quickieBtn.addEventListener('click', () => {
     mainImage2.style.opacity = '0'
     mainImage3.style.opacity = '0'
@@ -70,11 +71,16 @@ quickieBtn.addEventListener('click', () => {
     classicCircled.style.opacity = '0'
 })
 
+ 
 classicBtn.addEventListener('click', () => {
     mainImage2.style.opacity = '1'
     mainImage.style.opacity = '0'
     mainImage3.style.opacity = '0'
-    mainImage.classList.add ('_classic')
+
+    let offset = mainImage.offsetWidth
+   
+    mainImage2.style.transform = `translate3d(${offset}px, 0px, 0px)` 
+
 
     classicBtn.style.opacity = '.99'
     cureBtn.style.opacity = '.3'
@@ -89,6 +95,9 @@ cureBtn.addEventListener('click', () => {
     mainImage3.style.opacity = '1'
     mainImage2.style.opacity = '0'
     mainImage.style.opacity = '0'
+    
+    let offset = mainImage.offsetWidth
+    mainImage3.style.transform = `translate3d(-${offset}px, 0px, 0px)` 
 
     cureBtn.style.opacity = '.99'
     classicBtn.style.opacity = '.3'

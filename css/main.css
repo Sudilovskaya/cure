@@ -1,19 +1,21 @@
-.main-images-group{
+.main-images{
   display: flex;
+  justify-content: center;
 }
 .main-image{
   background: url('https://images.ctfassets.net/pzzgna09n4z0/332ERI87ZSKEeS2Oyguy4Q/1f4fe8db8c0c8dc15e20b52905e03224/img-step-1.jpg?w=1920&fm=webp&q=75') ; 
   background-size: 130%;
   background-repeat: no-repeat;
   z-index: -1;
-  width: 28vw;
+  width: 28vmax;
   height: 40vmax;
-  margin: auto;
   margin-top: 11vw;
+  margin-left: 0;
+  margin-right: 0;
   background-position: center;
   opacity: .99;
   transition-duration: 1000ms;
-  transition: all 1s ease;
+  transition: opacity 1s ease;
 }
 .main-image._active{
   background-size: 100%;
@@ -30,13 +32,14 @@
   z-index: -1;
   width: 28vmax;
   height: 40vmax;
-  margin: auto;
-  margin-top: 10rem;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 11vw;
   background-position: center;
-  transform: translate3d(421px, 0px, 0px);
   opacity: 0;
   transition-duration: 1000ms;
-  transition: all 1s ease;
+  transition: opacity 1s ease;
+  /* transform: translate3d(358px, 0px, 0px); */
 }
 .main-image2._active{
   background-size: 100%;
@@ -48,13 +51,13 @@
   z-index: -1;
   width: 28vmax;
   height: 40vmax;
-  margin: auto;
-  margin-top: 10rem;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 11vw;
   background-position: center;
-  transform: translate3d(-421px, 0px, 0px);
   opacity: 0;
   transition-duration: 1000ms;
-  transition: all 1s ease;
+  transition: opacity 1s ease;
 }
 .main-image3._active{
   background-size: 100%;
@@ -129,8 +132,8 @@
   position: absolute;
   left: 32vw;
   top: -13.5vmax;
-  width: 10.7vw;
-  height: 14vw;
+  width: 10.7vmax;
+  height: 14vmax;
   z-index: -2;
   transform: scale(0);
   transition: all 1s ease;
