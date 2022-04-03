@@ -133,18 +133,18 @@
     padding: 1.5rem;
   }
   .logo{
-    width: 8rem;
-    height: 4rem;
+    width: 6rem;
+    height: 3rem;
   }
   .burger-menu::before, 
     .burger-menu::after{
         height: 10%;
-        width: 200%;
+        width: 150%;
     }
     .burger-menu{
       margin-right: 1.5rem;
       height: 1rem;
-      top: 1.5rem;
+      top: 1rem;
     }
     .hero__text-strong{
       font-size: 8vw;
@@ -161,12 +161,12 @@
     }
     .main-image, .main-image2, .main-image3{
      position: relative;
-     width: 517px;
-    height: 690px;
+     height: 100vw;
+    width: 75vw;
     }
-    .main-image2, .main-image3{
+    /* .main-image2, .main-image3{
       display: none;
-    }
+    } */
     .main__title{
       font-size: 5vmax;
     }

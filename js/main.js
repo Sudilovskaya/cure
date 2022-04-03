@@ -57,11 +57,12 @@ const mainImage2 = document.querySelector('.main-image2')
 const mainImage3 = document.querySelector('.main-image3')
 let offset = mainImage.offsetWidth
 
+
 const offsetF = () => {
     mainImage2.style.transform = `translate3d(${offset}px, 0px, 0px)` 
     mainImage3.style.transform = `translate3d(-${offset}px, 0px, 0px)` 
 }
-offsetF()
+window.onload = offsetF()
 
 quickieBtn.addEventListener('click', () => {
     mainImage2.style.opacity = '0'
@@ -113,6 +114,21 @@ cureBtn.addEventListener('click', () => {
     quickieCircled.style.opacity = '0'
     classicCircled.style.opacity = '0'
     cureCircled.style.opacity = '1'
+})
+
+
+ //плавная прокрутка до якоря
+const anchors = document.querySelectorAll('a[href*="#"]')
+
+anchors.forEach((elem) => {
+    elem.addEventListener('click', (event) =>{
+        event.preventDefault()
+        const blockId = elem.getAttribute('href')
+        document.querySelector('' + blockId).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        }) 
+    }) 
 })
 
 // начало слайдера
