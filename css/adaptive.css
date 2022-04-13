@@ -126,6 +126,9 @@
       .main-green-decoration{
         top: -15.5vw;
       }
+      .main__text-description{
+        top: 21vw;
+      }
 }
 
 @media (max-width: 768px){
@@ -159,27 +162,61 @@
     .main-right-decoration,.main-branch-decoration {
       display: none;
     }
-    .main-image, .main-image2, .main-image3{
-     position: relative;
-     height: 100vw;
-    width: 75vw;
+    .main-images{
+      position: relative;
+      height: 100vw;
     }
-    /* .main-image2, .main-image3{
-      display: none;
-    } */
+    .main-image, .main-image2, .main-image3{
+     position: absolute;
+     height: 90vw;
+     width: 75vw;
+     transform: translate3d(0px, 0px, 0px) !important;
+    }
+    .main-green-decoration{
+      width: 30vw;
+      height: 38vw;
+      left: 7vw;
+      top: -32vw;
+    }
     .main__title{
-      font-size: 5vmax;
+      font-size: 9vw;
+      line-height: 3rem;
     }
     .main__text{
-      top: -35vmax ;
+      top: -62vw;
+      left: 6vw;
+    }
+    .br{
+      display: block;
+    }
+    .line{
+      width: 38vw;
+      margin-right: 1rem;
+      margin-left: 1rem;
+    }
+    .main__text-description{
+      top: 40vw;
+      left: 60vw;
+      font-size: 3vw;
+      position: absolute;
+    }
+    .main-nails-styles__item{
+      font-size: 8.5vw;
+    }
+    .circled{
+      height: 18vw;
+      width: 22vw;
+      top: -5vw;
+      left: 1vw;
+    }
+    .main-nails-styles{
+      padding-top: 10vw;
     }
     .nails__steps_step2-row, .nails__steps_step3-row{
       flex-direction: column;
     }
     .nails_steps-image{
-      
       height: 690px !important;
       width: 100%;
-
     }
 }

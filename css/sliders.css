@@ -50,13 +50,8 @@
 .filter-item:hover:after{
     width: 100%;
 }
-.filter-item-active:after{
-    display: block;
-    position: relative;
-    content: "";
-    background: #fff;
+.filter-item._active:after{
     width: 100%;
-    height: 1px;
 }
 .slider-wrapper{
     position: relative;
@@ -82,6 +77,13 @@
 .product {
     margin-right: 10.6vw;
     position: relative;
+    transition: all .3s ease;
+}
+.product._opacity{
+    opacity: 0;
+}
+.product._hide{
+    display: none;
 }
 .product-title{
     color: #c1c9d0;

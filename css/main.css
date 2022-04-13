@@ -20,11 +20,6 @@
 .main-image._active{
   background-size: 100%;
 }
-.main-image._classic{
-  background: url("//images.ctfassets.net/pzzgna09n4z0/nPqHascaA0qWgKK6GeCEQ/50410fea336065f3f8968cfaf4b09ff2/img-step-3-1.jpg?w=1920&fm=webp&q=75");
-  background-size: 100% 100%;
-  opacity: 1;
-}
 .main-image2{
   background: url("//images.ctfassets.net/pzzgna09n4z0/nPqHascaA0qWgKK6GeCEQ/50410fea336065f3f8968cfaf4b09ff2/img-step-3-1.jpg?w=1920&fm=webp&q=75") ; 
   background-size: 130%;
@@ -65,6 +60,9 @@
   position: relative;
   left: 16.5vw;
   top: -26.5vmax;
+}
+.br{
+  display: none;
 }
 .main__steps{
   position: absolute;
@@ -170,7 +168,7 @@
   user-select: none;
   position: relative;
 }
-.main-nails-styles__item-active{
+.main-nails-styles__item.active{
   opacity: .99;
 }
 .circled{

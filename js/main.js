@@ -131,6 +131,66 @@ anchors.forEach((elem) => {
     }) 
 })
 
+//фильтр
+const products = document.querySelectorAll('.product')
+const filterItem = document.querySelectorAll('.filter-item')
+
+
+filterItem[1].addEventListener('click', () => {
+    Array.from(products).slice(1).forEach((item) => {
+        item.style.opacity = '0'
+    })
+    filterItem[1].classList.toggle ('_active')
+    filterItem[0].classList.toggle ('_active')
+})
+
+filterItem[2].addEventListener('click', () => {
+    
+    products[0].classList.add('_opacity')
+
+    setTimeout(() => {  
+        products[0].classList.add('_hide')  
+         }, 500)  
+
+    products[2].classList.add('_hide') 
+    Array.from(products).slice(4).forEach((item) => {
+        item.style.opacity = '0'
+        item.style.visibility = 'hidden'
+        })
+    })
+
+    filterItem[3].addEventListener('click', () => {
+        products[0].classList.add('_opacity')
+        products[1].classList.add('_opacity')
+        products[3].classList.add('_opacity')
+        products[4].classList.add('_opacity')
+        products[6].classList.add('_opacity')
+
+        setTimeout(() => {  
+            products[0].classList.add('_hide') 
+            products[1].classList.add('_hide') 
+            products[3].classList.add('_hide')
+            products[4].classList.add('_hide')
+            products[6].classList.add('_hide')
+             }, 500)  
+        filterItem[1].classList.toggle ('_active')
+        filterItem[0].classList.toggle ('_active')
+    })
+
+    filterItem[4].addEventListener('click', () => {
+        Array.from(products).slice(0,4).forEach((item) => {
+            item.style.opacity = '0'
+        })
+        products[5].classList.add('_opacity')
+        setTimeout(() => {  
+            Array.from(products).slice(0,4).forEach((elem) => {
+                elem.classList.add('_hide')  
+            }, 500) 
+            })  
+            products[5].classList.add('_hide')
+        filterItem[1].classList.toggle ('_active')
+        filterItem[0].classList.toggle ('_active')
+    })
 // начало слайдера
 let slider = document.querySelector('.slider')
 let sliderTrack = slider.querySelector('.slider-track')
