@@ -308,4 +308,65 @@
     .price-list__white-box{
       width: 80vw;
     }
+    .title{
+      font-size: 8.5vw;
+    }
+    .sliders-subtitle{
+      font-size: 2.1vmax;
+      max-width: 90vw;
+    }
+    .filter-item {
+      margin-right: 3vmax;
+      margin-left: 3vmax;
+      font-size: 1.8vmax;
+    }
+    .product-image{
+      height: 70vw;
+      width: 100%;
+    }
+    .slider {
+      overflow: hidden;
+      height: 70vw;
+      width: 150%;
+  }
+  .slider-track {
+    width: 480%;
+  }
+  .add-me-text{
+    font-size: 6vmax;
+  }
+  .product-title {
+    font-size: 3.5vw;
+  }
+  .product-description{
+    font-size: 1.8vmax;
+  }
+  .card{
+    width: 45vw;
+    height: 63vw;
+    margin-right: 10.6vw;
+    padding: 1rem;
+  }
+  .card-image {
+    height: 20vw;
+    width: 15vw;
+}
+.card-title{
+  font-size: 1.5rem;
+}
+.card-subtitle{
+  font-size: 12px;
+}
+.card-cost{
+  font-size: 1.1rem;
+}
+.slider2 {
+  overflow: hidden;
+  height: 70vw;
+  width: 100%;
+}
+.slider2-track {
+  width: 376%;
+  height: 100%;
+}
 }
