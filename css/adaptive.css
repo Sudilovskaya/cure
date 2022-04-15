@@ -178,6 +178,9 @@
       left: 7vw;
       top: -32vw;
     }
+    .main{
+      padding-top: 7vw;
+    }
     .main__title{
       font-size: 9vw;
       line-height: 3rem;
@@ -215,8 +218,94 @@
     .nails__steps_step2-row, .nails__steps_step3-row{
       flex-direction: column;
     }
-    .nails_steps-image{
-      height: 690px !important;
+    .image-wrapper{
+      position: relative;
+      height: 100vw;
       width: 100%;
+    }
+    .nails_steps-image{
+      height: 100vw;
+      width: 100%;
+    }
+    .step-2{
+      position: relative;
+      height: 100vw;
+      width: 100%;
+    }
+    .nails__step2-wrapper{
+      height: 100vw;
+      width: 100%;
+    }
+    .nails__steps-title{
+      font-size: 8.5vw;
+    }
+    .nails__steps-text-strong{
+      font-size: 16vw;
+    }
+    .nails__step2-text{
+      left: 7vw;
+      height: 100vw;
+      top: 0;
+      justify-content: space-around;
+    }
+    .nails__steps-link{
+      font-size: 2.7vw;
+    }
+    .nails__step{
+      margin-bottom: 0;
+    }
+    .nails__steps-image2{
+      display: none;
+    }
+    .image-2-decoration{
+      display: none;
+    }
+    .nails__steps-image3 {
+      height: 100vw;
+      width: 75vw;
+      left: 0;
+      margin: auto;
+      top: 16vw;
+    }
+    .nails__steps-images-group{
+      max-height: 100vw;
+    }
+    .image-3-decoration{
+      left: 0;
+      height: 37vw;
+      width: 50vw;
+      top: -23vw;
+    }
+    .nails-steps-description{
+      flex-direction: column;
+    }
+    .strong-text-block{
+      top: -93vw;
+      left: 5%;
+    }
+    .steps__text-strong{
+      font-size: 8.3vw;
+      max-width: 100%;
+    }
+    .nails-steps-privilege{
+      max-width: 75vw;
+      margin-top: 19vw;
+    }
+    .nails-steps-privilege-text{
+     font-size: 3vw;
+     text-align: center;
+    }
+    .bg-images{
+      flex-direction: column;
+      position: relative;
+    }
+    .bg-image{
+      height: 100vw;
+    }
+    .bg-image:nth-child(2){
+      background-image: url("//images.ctfassets.net/pzzgna09n4z0/6jL7VD5kHeySwUOgUMaEIK/a588987f07ed54d4372ef909a651755b/img-mood-1.jpg?w=960&fm=webp&q=75");
+    }
+    .price-list__white-box{
+      width: 80vw;
     }
 }

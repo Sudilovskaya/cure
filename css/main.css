@@ -190,17 +190,26 @@
   display: flex;
   margin-top: 8.5vw;
 }
+.image-wrapper{
+  position: relative;
+  width: 50%;
+}
 .nails_steps-image{
   background-image:url("//images.ctfassets.net/pzzgna09n4z0/2YPxjpfe48qWascM0m42Ke/ece68fdfa93f22222e93e82e3e1144c6/img-step-2-2.jpg?w=1200&fm=webp&q=75");
   background-size:170% 170%;
   background-repeat: no-repeat;
   background-position: center;
-  height: auto;
+  height: 47vw;
+  width: 100%;
   flex-basis: 50%;
   transition: all 1.5s ease;
 }
 .nails_steps-image._active{
   background-size:100% 100%;
+}
+.step-2{
+  position: relative;
+  width: 50%;
 }
 .nails__step2-wrapper{
   background: #c1c9d0;
@@ -353,7 +362,6 @@
   position: relative;
   z-index: -2;
   width: 23.5vw;
-  height: 17vw;
   top: -29vmax;
   left: 2.5vw;
 }
@@ -434,6 +442,6 @@ transform: translateY(0) rotate(-11deg);
 .bg-image._active{
   background-size:100% 100%;
 }
-.bg-image:nth-child(2){
+.bg-image.second{
   background-image: url("//images.ctfassets.net/pzzgna09n4z0/6jL7VD5kHeySwUOgUMaEIK/a588987f07ed54d4372ef909a651755b/img-mood-1.jpg?w=960&fm=webp&q=75");
 }
