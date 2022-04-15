@@ -308,6 +308,9 @@
     .price-list__white-box{
       width: 80vw;
     }
+    .price-list__manicure-title-wrapper{
+      margin-right: 3.5vw;
+    }
     .title{
       font-size: 8.5vw;
     }
@@ -325,12 +328,13 @@
       width: 100%;
     }
     .slider {
-      overflow: hidden;
+      overflow-x: hidden !important;
       height: 70vw;
       width: 150%;
   }
   .slider-track {
     width: 480%;
+    overflow: hidden;
   }
   .add-me-text{
     font-size: 6vmax;
@@ -361,12 +365,71 @@
   font-size: 1.1rem;
 }
 .slider2 {
-  overflow: hidden;
+  overflow-x: hidden;
   height: 70vw;
   width: 100%;
 }
 .slider2-track {
   width: 376%;
   height: 100%;
+  overflow: hidden;
+}
+
+.cooperation-wrapper{
+  height: 120vw;
+}
+.cooperation-image-bg{
+  height: 130vw;
+  width: 190%;
+  background-size: 190%;
+  background-position: center;
+}
+.cooperation-description{
+  font-size: 1rem;
+  max-width: 40%;
+}
+.cooperation-title{
+  font-size: 2.4rem;
+}
+.footer-title-wrapper{
+  margin-left: 4vmax;
+}
+.cooperation-text-group{
+  flex-direction: column;
+  margin-left: 4vmax;
+}
+.cooperation-link{
+  font-size: 1rem;
+  
+}
+.email-link{
+  font-size: 1.5rem;
+}
+.cooperation-text-strong{
+  font-size: 2.52rem;
+
+}
+.cooperation-contact{
+  
+}
+.footer-cols-wrapper{
+  flex-direction: column;
+  margin-left: 4vmax;
+}
+.footer-title, .footer-link{
+  font-size: 2rem;
+}
+.footer-col-2{
+  justify-content: space-between;
+  margin-top: 2vmax;
+}
+.footer-details{
+  font-size: 1rem;
+}
+.footer-end{
+  text-align-last: left;
+  font-size: 2rem;
+  margin-left: 4vmax;
+  margin-top: 7vmax;
 }
 }

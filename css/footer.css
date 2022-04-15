@@ -55,6 +55,9 @@
 .cooperation-title._active{
     transform: translateY(0);
 }
+.cooperation-link-wrapper{
+    position: relative;
+}
 .cooperation-link {
     cursor: pointer;
     font-size: .75rem;
