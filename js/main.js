@@ -1,3 +1,4 @@
+
 // мобильное меню
 const burgerBtn = document.querySelector('.burger-menu')
 const mobileMenu = document.querySelector('.mobile-menu')
@@ -191,123 +192,123 @@ filterItem[2].addEventListener('click', () => {
         filterItem[1].classList.toggle ('_active')
         filterItem[0].classList.toggle ('_active')
     })
-// начало слайдера
-let slider = document.querySelector('.slider')
-let sliderTrack = slider.querySelector('.slider-track')
+// // начало слайдера
+// let slider = document.querySelector('.slider')
+// let sliderTrack = slider.querySelector('.slider-track')
 
-let pressed = false
-let startx
-let x
+// let pressed = false
+// let startx
+// let x
 
-slider.addEventListener('mousedown', (e) => {
-    pressed = true;
-    startx = e.offsetX - sliderTrack.offsetLeft ; //получаем начальную позицию мыши
-    slider.style.cursor = 'grabbing';
-});
+// slider.addEventListener('mousedown', (e) => {
+//     pressed = true;
+//     startx = e.offsetX - sliderTrack.offsetLeft ; //получаем начальную позицию мыши
+//     slider.style.cursor = 'grabbing';
+// });
 
-slider.addEventListener('mouseenter', () => {
-    slider.style.cursor = 'grab'
-});
+// slider.addEventListener('mouseenter', () => {
+//     slider.style.cursor = 'grab'
+// });
 
-slider.addEventListener('mouseup', () => {
-    slider.style.cursor = 'grab';
-});
+// slider.addEventListener('mouseup', () => {
+//     slider.style.cursor = 'grab';
+// });
 
-window.addEventListener('mouseup', () => {
-    pressed = false;
-});
+// window.addEventListener('mouseup', () => {
+//     pressed = false;
+// });
 
-slider.addEventListener('mousemove', (e) =>{
-    if(!pressed) return;
+// slider.addEventListener('mousemove', (e) =>{
+//     if(!pressed) return;
 
-    x = e.offsetX
+//     x = e.offsetX
 
-    sliderTrack.style.left = `${x - startx}px`;  //получаем координаты относительно левого края внутреннего блока и вычитаем из смещения родительского блока
-    checkBoundary()
-})
+//     sliderTrack.style.left = `${x - startx}px`;  //получаем координаты относительно левого края внутреннего блока и вычитаем из смещения родительского блока
+//     checkBoundary()
+// })
 
-//проверяем границы
-const checkBoundary = () => {  
-    let outer = slider.getBoundingClientRect()
-    let inner = sliderTrack.getBoundingClientRect()
+// //проверяем границы
+// const checkBoundary = () => {  
+//     let outer = slider.getBoundingClientRect()
+//     let inner = sliderTrack.getBoundingClientRect()
 
-    if(parseInt(sliderTrack.style.left) > 0){
-        sliderTrack.style.left = '';
-    } else if (inner.right < outer.right){
-        sliderTrack.style.left = `-${inner.width - outer.width}px`
-    }
-}
+//     if(parseInt(sliderTrack.style.left) > 0){
+//         sliderTrack.style.left = '';
+//     } else if (inner.right < outer.right){
+//         sliderTrack.style.left = `-${inner.width - outer.width}px`
+//     }
+// }
 
-// для сенсорных экранов
-slider.addEventListener('touchstart', (e) => {   
-    pressed = true;
-    startx = e.targetTouches[0].clientX - sliderTrack.offsetLeft;
-}, {passive: true});
-
-
-slider.addEventListener('touchmove', (e) => {
-    if(!pressed) return;
-    x = e.targetTouches[0].clientX;
-
-    sliderTrack.style.left = `${x - startx}px`;  
-    checkBoundary();
-}, {passive: true});
+// // для сенсорных экранов
+// slider.addEventListener('touchstart', (e) => {   
+//     pressed = true;
+//     startx = e.targetTouches[0].clientX - sliderTrack.offsetLeft;
+// }, {passive: true});
 
 
-// начало второго слайдера
-let slider2 = document.querySelector('.slider2')
-let sliderTrack2 = slider2.querySelector('.slider2-track')
+// slider.addEventListener('touchmove', (e) => {
+//     if(!pressed) return;
+//     x = e.targetTouches[0].clientX;
 
-slider2.addEventListener('mousedown', (e) => {
-    pressed = true;
-    startx = e.offsetX - sliderTrack2.offsetLeft ; //получаем начальную позицию мыши
-    slider2.style.cursor = 'grabbing';
-
-});
-
-slider2.addEventListener('mouseenter', () => {
-    slider2.style.cursor = 'grab'
-});
-
-slider2.addEventListener('mouseup', () => {
-    slider2.style.cursor = 'grab';
-});
-
-window.addEventListener('mouseup', () => {
-    pressed = false;
-});
-
-slider2.addEventListener('mousemove', (e) =>{
-    if(!pressed) return;
-
-    x = e.offsetX
-
-    sliderTrack2.style.left = `${x - startx}px`;  //получаем координаты относительно левого края внутреннего блока и вычитаем из смещения родительского блока
-    checkBoundary2()
-})
-
-const checkBoundary2 = () => {  
-    let outer = slider2.getBoundingClientRect()
-    let inner = sliderTrack2.getBoundingClientRect()
-
-    if(parseInt(sliderTrack2.style.left) > 0){
-        sliderTrack2.style.left = '';
-    } else if (inner.right < outer.right){
-        sliderTrack2.style.left = `-${inner.width - outer.width}px`
-    }
-}
-
-// для сенсорных экранов
-slider2.addEventListener('touchstart', (e) => {   
-    pressed = true;
-    startx = e.targetTouches[0].clientX - sliderTrack2.offsetLeft;
-}, {passive: true});
+//     sliderTrack.style.left = `${x - startx}px`;  
+//     checkBoundary();
+// }, {passive: true});
 
 
-slider2.addEventListener('touchmove', (e) => {
-    if(!pressed) return;
-    x = e.targetTouches[0].clientX;
+// // начало второго слайдера
+// let slider2 = document.querySelector('.slider2')
+// let sliderTrack2 = slider2.querySelector('.slider2-track')
 
-    sliderTrack2.style.left = `${x - startx}px`;  
-    checkBoundary2();
-}, {passive: true});
+// slider2.addEventListener('mousedown', (e) => {
+//     pressed = true;
+//     startx = e.offsetX - sliderTrack2.offsetLeft ; //получаем начальную позицию мыши
+//     slider2.style.cursor = 'grabbing';
+
+// });
+
+// slider2.addEventListener('mouseenter', () => {
+//     slider2.style.cursor = 'grab'
+// });
+
+// slider2.addEventListener('mouseup', () => {
+//     slider2.style.cursor = 'grab';
+// });
+
+// window.addEventListener('mouseup', () => {
+//     pressed = false;
+// });
+
+// slider2.addEventListener('mousemove', (e) =>{
+//     if(!pressed) return;
+
+//     x = e.offsetX
+
+//     sliderTrack2.style.left = `${x - startx}px`;  //получаем координаты относительно левого края внутреннего блока и вычитаем из смещения родительского блока
+//     checkBoundary2()
+// })
+
+// const checkBoundary2 = () => {  
+//     let outer = slider2.getBoundingClientRect()
+//     let inner = sliderTrack2.getBoundingClientRect()
+
+//     if(parseInt(sliderTrack2.style.left) > 0){
+//         sliderTrack2.style.left = '';
+//     } else if (inner.right < outer.right){
+//         sliderTrack2.style.left = `-${inner.width - outer.width}px`
+//     }
+// }
+
+// // для сенсорных экранов
+// slider2.addEventListener('touchstart', (e) => {   
+//     pressed = true;
+//     startx = e.targetTouches[0].clientX - sliderTrack2.offsetLeft;
+// }, {passive: true});
+
+
+// slider2.addEventListener('touchmove', (e) => {
+//     if(!pressed) return;
+//     x = e.targetTouches[0].clientX;
+
+//     sliderTrack2.style.left = `${x - startx}px`;  
+//     checkBoundary2();
+// }, {passive: true});

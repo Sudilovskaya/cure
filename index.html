@@ -16,8 +16,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
   <script src="js/main.js" defer></script>
+  <script src="js/slider.js" type="module" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha512-HaoDYc3PGduguBWOSToNc0AWGHBi2Y432Ssp3wNIdlOzrunCtB2qq6FrhtPbo+PlbvRbyi86dr5VQx61eg/daQ==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" defer></script>
 </head>
 <body>
   <header class="header">
@@ -297,89 +300,99 @@
     <div class="filter-item">Moisturizers</div>
   </div>
 
-  <div class="slider-wrapper">
-    <div class="slider">
-      <div class="slider-track">
-        <div class="product">
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+        <div class="swiper-slide">
           <div class="product-image product-image1"></div>
           <div class="product-description">Balance & Moisture</div>
           <div class="product-title">Many Minerals of Grey</div>
         </div>
-        <div class="product">
+        <div class="swiper-slide">
           <div class="product-image product-image2"></div>
           <div class="product-description">Anti-Oxidizing & Anti-Aging</div>
           <div class="product-title">Berry Preserve</div>
         </div>
-        <div class="product">
+        <div class="swiper-slide">
           <div class="product-image product-image3"></div>
           <div class="product-description">Sun-Damage & Elasticity</div>
           <div class="product-title">Minty Matcha</div>
         </div>
-        <div class="product">
-          <div class="text-strong add-me-text">Add me</div>
+        <div class="swiper-slide">
           <div class="product-image product-image4"></div>
+          <div class="text-strong add-me-text">Add me</div>
           <div class="product-description">Tone & Lighten</div>
           <div class="product-title">Citrus Peel</div>
         </div>
-        <div class="product">
+        <div class="swiper-slide">
           <div class="product-image product-image5"></div>
           <div class="product-description">Scars & Fine Lines</div>
           <div class="product-title">Liquid Gold Oil</div>
         </div>
-        <div class="product">
+        <div class="swiper-slide">
           <div class="product-image product-image6"></div>
           <div class="product-description">Glow & Repair</div>
           <div class="product-title">Omega Strawberry</div>
         </div>
-        <div class="product">
-          <div class="text-strong add-me-text">Add me</div>
+        <div class="swiper-slide">
           <div class="product-image product-image7"></div>
+          <div class="text-strong add-me-text">Add me</div>
           <div class="product-description">Cooling & Soothing </div>
           <div class="product-title">Skin Haven Lotion</div>
         </div>
-      </div>
     </div>
   </div>
 
 <p class="sliders-title _anim-items _anim-no-hide title"> Add-ons</p>
- <div class="slider2-wrapper">
-  <div class="slider2"> 
-    <div class="slider2-track">
-      <div class="card">
-        <img src="img/cards/card1.png" alt="" class="card-image"> 
+ <div class="swiper-container">
+  <div class="swiper-wrapper"> 
+      <div class="swiper-slide">
+        <div class="card">
+          <img src="img/cards/card1.png" alt="" class="card-image"> 
         <p class="card-title">Paraffin <br> Cure </p>
         <p class="card-subtitle">Soften & Moisture</p>
         <p class="card-cost">$10</p>
+        </div>
       </div>
-      <div class="card">
+      <div class="swiper-slide">
+       <div class="card">
         <img src="img/cards/card2.png" alt="" class="card-image"> 
         <p class="card-title">Massage <br> Cure </p>
         <p class="card-subtitle">Extra 10 Minutes</p>
         <p class="card-cost">$10</p>
+       </div>
       </div>
-      <div class="card">
-        <img src="img/cards/card3.png" alt="" class="card-image"> 
-        <p class="card-title">Head, Neck, & Shoulder <br> Massage </p>
-        <p class="card-subtitle">10 Minutes</p>
-        <p class="card-cost">$10</p>
+      <div class="swiper-slide">
+        <div class="card">
+          <img src="img/cards/card3.png" alt="" class="card-image"> 
+          <p class="card-title">Head, Neck, & Shoulder <br> Massage </p>
+          <p class="card-subtitle">10 Minutes</p>
+          <p class="card-cost">$10</p>
+        </div>
       </div>
-      <div class="card">
-        <img src="img/cards/card4.png" alt="" class="card-image"> 
+      <div class="swiper-slide">
+        <div class="card">
+          <img src="img/cards/card4.png" alt="" class="card-image"> 
         <p class="card-title">Nail <br> Art </p>
         <p class="card-cost card-cost-margin">$2 <span> per nail </span></p>
+        </div>
       </div>
-      <div class="card">
+      <div class="swiper-slide">
+       <div class="card">
         <img src="img/cards/card1.png" alt="" class="card-image"> 
         <p class="card-title">Acrylic <br> Removal </p>
         <p class="card-cost card-cost-margin">$20</p>
+       </div>
       </div>
-      <div class="card">
+      <div class="swiper-slide">
+       <div class="card">
         <img src="img/cards/card6.png" alt="" class="card-image"> 
         <p class="card-title">Extended <br> Tips </p>
         <p class="card-subtitle">Aprés Gel-X System</p>
         <p class="card-cost">$20</p>
+       </div>
       </div>
-   </div>
+
   </div>
  </div>
 </article>
@@ -426,5 +439,6 @@
  </div>
   <p class="footer-end">Nailed it.</p>
 </footer>
+
 </body>
 </html>

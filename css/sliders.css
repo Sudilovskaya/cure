@@ -53,13 +53,13 @@
 .filter-item._active:after{
     width: 100%;
 }
-.slider-wrapper{
+/* .swiper{
     position: relative;
     left: 10vw;
     margin-top: 6.5vw;
     margin-bottom: 6.5vw;
 }
-.slider {
+.swiper-wrapper {
     overflow: hidden;
     height: 27vw;
     width: 100%;
@@ -73,16 +73,21 @@
     height: 100%;
     top: 0;
     left: 0;
+} */
+.swiper {
+    padding-left: 10vw !important;
+    margin-top: 6.5vw;
 }
-.product {
-    margin-right: 10.6vw;
-    position: relative;
+.swiper-wrapper{
+    height: 34vw !important;
+}
+.swiper-slide {
     transition: all .3s ease;
 }
-.product._opacity{
+.swiper-slide._opacity{
     opacity: 0;
 }
-.product._hide{
+.swiper-slide._hide{
     display: none;
 }
 .product-title{
@@ -90,6 +95,7 @@
     line-height: 1;
     font-size: 2vw;
     margin-top: 1rem;
+    max-width: 50%;
 }
 .product-description{
     position: absolute;
@@ -101,11 +107,12 @@
     font-size: 1.1vmax;
 }
 .add-me-text{
-    position: absolute;
-    top: -1.5rem;
-    right: -2rem;
+    position: absolute !important;
+    top: -1rem;
+    left: 9rem;
     transform: rotate(-16deg);
     font-size: 4.3vmax;
+    z-index: 10;
 }
 .product-image {
     height: 27vw;
@@ -137,7 +144,7 @@
 .product-image8 {
     background-image: url("//images.ctfassets.net/pzzgna09n4z0/2o1mUrrzSE2IwkC60c0oIG/9eb1af35f445e7576b4af3ce15d06b67/The_Carrot_Taker._Balm.png?w=960&fm=webp&q=75");
 }
-.slider2-wrapper{
+/* .slider2-wrapper{
     position: relative;
     left: 10vw;
     padding-bottom: 3rem;
@@ -156,13 +163,19 @@
     height: 100%;
     top: 0;
     left: 0;
+} */
+.swiper-container{
+    padding-left: 10vw !important;
+    height: 27vw;
+    padding-bottom: 3rem;
 }
 .card {
     position: relative;
     margin-right: 1.75vw;
     background: #fff;
     padding: 2vw;
-    height: 19vw;
+    height: 20vw;
+    width: 15vw;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
