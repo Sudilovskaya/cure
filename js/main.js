@@ -46,76 +46,59 @@ if  (animItems.length > 0) {
 }
 
 //переключение фотографий
-const quickieBtn = document.getElementById('quickie')
-const classicBtn = document.getElementById('classic')
-const cureBtn = document.getElementById('cure')
-const quickieCircled = document.querySelector('.quickie-circled')
-const classicCircled = document.querySelector('.classic-circled')
-const cureCircled = document.querySelector('.cure-circled')
-const mainImage = document.querySelector('.main-image')
-const mainImage2 = document.querySelector('.main-image2')
-const mainImage3 = document.querySelector('.main-image3')
-let offset = mainImage.offsetWidth
+const mainImages = document.querySelectorAll('.main-image')
+const btnItems = document.querySelectorAll('.main-nails-styles__item')
+const circles = document.querySelectorAll('.circled')
 
+let offset = mainImages[1].offsetWidth
 
-const offsetF = () => {
-    mainImage2.style.transform = `translate3d(${offset}px, 0px, 0px)` 
-    mainImage3.style.transform = `translate3d(-${offset}px, 0px, 0px)` 
+const offsetF = () => {  //смещение фотографий
+    mainImages[0].style.transform = `translate3d(${offset}px, 0px, 0px)` 
+    mainImages[2].style.transform = `translate3d(-${offset}px, 0px, 0px)` 
 }
 window.onload = offsetF()
 
-quickieBtn.addEventListener('click', () => {
-    mainImage2.style.opacity = '0'
-    mainImage3.style.opacity = '0'
-    mainImage.style.opacity = '1'
 
-    classicBtn.style.opacity = '.3'
-    cureBtn.style.opacity = '.3'
-    quickieBtn.style.opacity = '.99'
+btnItems.forEach(item => {
+    item.addEventListener('click', event => {
+        let filterName = event.target.dataset.f
 
-    quickieCircled.style.opacity = '1'
-    cureCircled.style.opacity = '0'
-    classicCircled.style.opacity = '0'
+        btnItems.forEach(elem => {
+            elem.classList.remove('opacity')
+
+            if(!elem.classList.contains(filterName)){
+                elem.classList.add('opacity')
+            }
+            if(elem.classList.contains (filterName)){
+                elem.classList.add('active')
+            }
+        })
+        
+        mainImages.forEach(image =>{
+            image.classList.remove('_hide')
+
+            if(!image.classList.contains (filterName)){
+                image.classList.add('_hide')
+            }
+            if(image.classList.contains (filterName)){
+                image.style.opacity = '1'
+            }
+        })
+
+        circles.forEach(circle => {
+            circle.classList.remove('_hide')
+
+
+            if(!circle.classList.contains (filterName)){
+                circle.classList.add('_hide')
+            }
+            if(circle.classList.contains (filterName)){
+                circle.style.opacity = '1'
+            }
+        })
+        
+    })
 })
-
- 
-classicBtn.addEventListener('click', () => {
-    mainImage2.style.opacity = '1'
-    mainImage.style.opacity = '0'
-    mainImage3.style.opacity = '0'
-
-    let offset = mainImage.offsetWidth
-   
-    mainImage2.style.transform = `translate3d(${offset}px, 0px, 0px)` 
-
-
-    classicBtn.style.opacity = '.99'
-    cureBtn.style.opacity = '.3'
-    quickieBtn.style.opacity = '.3'
-
-    quickieCircled.style.opacity = '0'
-    cureCircled.style.opacity = '0'
-    classicCircled.style.opacity = '1'
-})
-
-cureBtn.addEventListener('click', () => {
-    mainImage3.style.opacity = '1'
-    mainImage2.style.opacity = '0'
-    mainImage.style.opacity = '0'
-    
-    let offset = mainImage.offsetWidth
-
-    mainImage3.style.transform = `translate3d(-${offset}px, 0px, 0px)` 
-
-    cureBtn.style.opacity = '.99'
-    classicBtn.style.opacity = '.3'
-    quickieBtn.style.opacity = '.3'
-
-    quickieCircled.style.opacity = '0'
-    classicCircled.style.opacity = '0'
-    cureCircled.style.opacity = '1'
-})
-
 
  //плавная прокрутка до якоря
 const anchors = document.querySelectorAll('a[href*="#"]')
