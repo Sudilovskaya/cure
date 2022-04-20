@@ -117,7 +117,8 @@ anchors.forEach((elem) => {
 //фильтр
 const products = document.querySelectorAll('.product')
 const filterItems = document.querySelectorAll('.filter-item')
-const slides = document.querySelectorAll('.swiper-slide')
+const slider = document.querySelector('.swiper')
+const slides = slider.querySelectorAll('.swiper-slide')
 
 filterItems.forEach(item => {
 

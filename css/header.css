@@ -21,10 +21,10 @@ body{
   box-sizing: border-box;
   color: #fff;
   background-color: #d9d8e3;
-  overflow-x: hidden !important;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5; 
+  overflow-x: hidden !important;
 }
 body._lock{
   overflow: hidden;

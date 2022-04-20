@@ -1,3 +1,7 @@
+.main{
+  overflow-x: hidden !important;
+  padding-bottom: 2vw;
+}
 .main-images{
   display: flex;
   justify-content: center;
@@ -199,6 +203,9 @@
 .image-wrapper{
   position: relative;
   width: 50%;
+}
+.nails-steps{
+  overflow-x: hidden !important;
 }
 .nails_steps-image{
   background-image:url("//images.ctfassets.net/pzzgna09n4z0/2YPxjpfe48qWascM0m42Ke/ece68fdfa93f22222e93e82e3e1144c6/img-step-2-2.jpg?w=1200&fm=webp&q=75");
