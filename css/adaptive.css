@@ -8,6 +8,7 @@
     .logo{
         width: 4.5rem;
         height: 1.5rem;
+
     }
     .hero__text-strong{
         font-size: 3rem;
@@ -58,7 +59,7 @@
         top: 0;
         left: 100%;
         background: #c1c9d0;
-        width: 100%;
+        width: 100vw;
         height: 100vh;
         z-index: 11;
         display: flex;
@@ -193,7 +194,7 @@
       display: block;
     }
     .line{
-      width: 38vw;
+      width: 36vw;
       margin-right: 1rem;
       margin-left: 1rem;
     }
@@ -318,26 +319,26 @@
       font-size: 2.1vmax;
       max-width: 90vw;
     }
+    .filter-row {
+      padding-left: 1.5vw;
+      padding-right: 1.5vw;
+    }
     .filter-item {
-      margin-right: 3vmax;
-      margin-left: 3vmax;
-      font-size: 1.8vmax;
+      margin-right: 4vw;
+      margin-left: 4vw;
+      font-size: 3vw;
     }
     .product-image{
       height: 70vw;
-      width: 100%;
+      width: 85%;
     }
-    /* .slider {
-      overflow-x: hidden !important;
-      height: 70vw;
-      width: 150%;
-  } */
-  /* .slider-track {
-    width: 480%;
-    overflow: hidden;
-  } */
+    .swiper-wrapper{
+      height: 82vw !important;
+  }
   .add-me-text{
-    font-size: 6vmax;
+    font-size: 8vw;
+    right: 4vw;
+    top: -3.5vw;
   }
   .product-title {
     font-size: 3.5vw;
@@ -345,6 +346,9 @@
   .product-description{
     font-size: 1.8vmax;
   }
+  .swiper-container{
+    height: 70vw;
+}
   .card{
     width: 45vw;
     height: 63vw;
@@ -356,24 +360,14 @@
     width: 15vw;
 }
 .card-title{
-  font-size: 1.5rem;
+  font-size: 4vw;
 }
 .card-subtitle{
   font-size: 12px;
 }
 .card-cost{
-  font-size: 1.1rem;
+  font-size: 3vw;
 }
-/* .slider2 {
-  overflow-x: hidden;
-  height: 70vw;
-  width: 100%;
-}
-.slider2-track {
-  width: 376%;
-  height: 100%;
-  overflow: hidden;
-} */
 .cooperation-wrapper{
   height: 120vw;
 }
@@ -384,6 +378,7 @@
 .cooperation-description{
   font-size: 1rem;
   max-width: 50%;
+  margin-top: 6vw;
 }
 .cooperation-title{
   font-size: 2.52rem;
@@ -407,7 +402,7 @@
   white-space: nowrap;
 }
 .cooperation-contact{
-  bottom: 4%;
+  bottom: 1vw;
   position: absolute;
 }
 .footer-cols-wrapper{

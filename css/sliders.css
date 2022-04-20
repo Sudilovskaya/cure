@@ -30,6 +30,8 @@
     text-transform: uppercase;
     justify-content: center;
     margin-top: 6.5vw;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
 }
 .filter-item {
     margin-right: 3vmax;
@@ -53,30 +55,9 @@
 .filter-item._active:after{
     width: 100%;
 }
-/* .swiper{
-    position: relative;
-    left: 10vw;
-    margin-top: 6.5vw;
-    margin-bottom: 6.5vw;
-}
-.swiper-wrapper {
-    overflow: hidden;
-    height: 27vw;
-    width: 100%;
-}
-.slider-track {
-    position: absolute;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    pointer-events: none;
-    width: 220%;
-    height: 100%;
-    top: 0;
-    left: 0;
-} */
 .swiper {
     padding-left: 10vw !important;
-    margin-top: 6.5vw;
+    padding-top: 6.5vw !important;
 }
 .swiper-wrapper{
     height: 34vw !important;
@@ -85,12 +66,24 @@
     transition: all .3s ease;
     position: relative;
 }
-.swiper-slide._opacity{
-    opacity: 0;
+.hide{
+    animation: a1 1s;
+    animation-fill-mode: forwards;
 }
-.swiper-slide._hide{
+.display-none{
     display: none;
 }
+@keyframes a1{
+    to {
+        opacity: 0;
+        min-height: 0;
+        min-width: 0;
+        padding: 0;
+        margin: 0;
+        border: 0;
+    }
+}
+
 .product-title{
     color: #c1c9d0;
     line-height: 1;
@@ -109,8 +102,8 @@
 }
 .add-me-text{
     position: absolute !important;
-    top: -1rem;
-    left: 9rem;
+    right: 6vw;
+    top: -3vw;
     transform: rotate(-16deg);
     font-size: 4.3vmax;
     z-index: 10;
@@ -145,26 +138,6 @@
 .product-image8 {
     background-image: url("//images.ctfassets.net/pzzgna09n4z0/2o1mUrrzSE2IwkC60c0oIG/9eb1af35f445e7576b4af3ce15d06b67/The_Carrot_Taker._Balm.png?w=960&fm=webp&q=75");
 }
-/* .slider2-wrapper{
-    position: relative;
-    left: 10vw;
-    padding-bottom: 3rem;
-}
-.slider2 {
-    overflow: hidden;
-    height: 27vw;
-    width: 96%;
-}
-.slider2-track {
-    position: absolute;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    pointer-events: none;
-    width: 134%;
-    height: 100%;
-    top: 0;
-    left: 0;
-} */
 .swiper-container{
     padding-left: 10vw !important;
     height: 27vw;

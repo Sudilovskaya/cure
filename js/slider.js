@@ -7,6 +7,15 @@ const swiper = new Swiper(document.querySelector('.swiper'), {
     grabCursor:true,
     
     spaceBetween: 0,
+
+    breakpoints: {
+        769: {
+            slidesPerView: 3,
+        },
+        0: {
+            slidesPerView: 1.5,
+        }
+    },
 })
 
 const swiper2 = new Swiper(document.querySelector('.swiper-container'), {
@@ -15,4 +24,13 @@ const swiper2 = new Swiper(document.querySelector('.swiper-container'), {
     grabCursor:true,
     
     spaceBetween: 0,
+
+    breakpoints: {
+        769: {
+            slidesPerView: 4.3,
+        },
+        0: {
+            slidesPerView: 1.5,
+        }
+    },
 })

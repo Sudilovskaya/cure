@@ -1,4 +1,3 @@
-
 // мобильное меню
 const burgerBtn = document.querySelector('.burger-menu')
 const mobileMenu = document.querySelector('.mobile-menu')
@@ -134,181 +133,39 @@ anchors.forEach((elem) => {
 
 //фильтр
 const products = document.querySelectorAll('.product')
-const filterItem = document.querySelectorAll('.filter-item')
+const filterItems = document.querySelectorAll('.filter-item')
+const slides = document.querySelectorAll('.swiper-slide')
 
+filterItems.forEach(item => {
 
-filterItem[1].addEventListener('click', () => {
-    Array.from(products).slice(1).forEach((item) => {
-        item.style.opacity = '0'
-    })
-    filterItem[1].classList.toggle ('_active')
-    filterItem[0].classList.toggle ('_active')
-})
+    item.addEventListener('click', event => {
 
-filterItem[2].addEventListener('click', () => {
+        let filterClass = event.target.dataset.f
     
-    products[0].classList.add('_opacity')
+        products.forEach(elem =>{
 
-    setTimeout(() => {  
-        products[0].classList.add('_hide')  
-         }, 500)  
+            elem.classList.remove('hide')
+            elem.classList.remove('display-none')
 
-    products[2].classList.add('_hide') 
-    Array.from(products).slice(4).forEach((item) => {
-        item.style.opacity = '0'
-        item.style.visibility = 'hidden'
+            if(!elem.classList.contains(filterClass) && filterClass!== 'all' ) {
+                elem.classList.add('hide')
+                setTimeout(() => {  
+                    elem.classList.add('display-none')  
+                     }, 500) 
+            }
         })
-    })
+        slides.forEach(elem =>{
+            elem.classList.remove('hide')
+            elem.classList.remove('display-none')
 
-    filterItem[3].addEventListener('click', () => {
-        products[0].classList.add('_opacity')
-        products[1].classList.add('_opacity')
-        products[3].classList.add('_opacity')
-        products[4].classList.add('_opacity')
-        products[6].classList.add('_opacity')
-
-        setTimeout(() => {  
-            products[0].classList.add('_hide') 
-            products[1].classList.add('_hide') 
-            products[3].classList.add('_hide')
-            products[4].classList.add('_hide')
-            products[6].classList.add('_hide')
-             }, 500)  
-        filterItem[1].classList.toggle ('_active')
-        filterItem[0].classList.toggle ('_active')
-    })
-
-    filterItem[4].addEventListener('click', () => {
-        Array.from(products).slice(0,4).forEach((item) => {
-            item.style.opacity = '0'
+            if(!elem.classList.contains(filterClass) && filterClass!== 'all') {
+                elem.classList.add('hide')
+                setTimeout(() => {  
+                    elem.classList.add('display-none')  
+                     }, 500)  
+            }
         })
-        products[5].classList.add('_opacity')
-        setTimeout(() => {  
-            Array.from(products).slice(0,4).forEach((elem) => {
-                elem.classList.add('_hide')  
-            }, 500) 
-            })  
-            products[5].classList.add('_hide')
-        filterItem[1].classList.toggle ('_active')
-        filterItem[0].classList.toggle ('_active')
+
+        
     })
-// // начало слайдера
-// let slider = document.querySelector('.slider')
-// let sliderTrack = slider.querySelector('.slider-track')
-
-// let pressed = false
-// let startx
-// let x
-
-// slider.addEventListener('mousedown', (e) => {
-//     pressed = true;
-//     startx = e.offsetX - sliderTrack.offsetLeft ; //получаем начальную позицию мыши
-//     slider.style.cursor = 'grabbing';
-// });
-
-// slider.addEventListener('mouseenter', () => {
-//     slider.style.cursor = 'grab'
-// });
-
-// slider.addEventListener('mouseup', () => {
-//     slider.style.cursor = 'grab';
-// });
-
-// window.addEventListener('mouseup', () => {
-//     pressed = false;
-// });
-
-// slider.addEventListener('mousemove', (e) =>{
-//     if(!pressed) return;
-
-//     x = e.offsetX
-
-//     sliderTrack.style.left = `${x - startx}px`;  //получаем координаты относительно левого края внутреннего блока и вычитаем из смещения родительского блока
-//     checkBoundary()
-// })
-
-// //проверяем границы
-// const checkBoundary = () => {  
-//     let outer = slider.getBoundingClientRect()
-//     let inner = sliderTrack.getBoundingClientRect()
-
-//     if(parseInt(sliderTrack.style.left) > 0){
-//         sliderTrack.style.left = '';
-//     } else if (inner.right < outer.right){
-//         sliderTrack.style.left = `-${inner.width - outer.width}px`
-//     }
-// }
-
-// // для сенсорных экранов
-// slider.addEventListener('touchstart', (e) => {   
-//     pressed = true;
-//     startx = e.targetTouches[0].clientX - sliderTrack.offsetLeft;
-// }, {passive: true});
-
-
-// slider.addEventListener('touchmove', (e) => {
-//     if(!pressed) return;
-//     x = e.targetTouches[0].clientX;
-
-//     sliderTrack.style.left = `${x - startx}px`;  
-//     checkBoundary();
-// }, {passive: true});
-
-
-// // начало второго слайдера
-// let slider2 = document.querySelector('.slider2')
-// let sliderTrack2 = slider2.querySelector('.slider2-track')
-
-// slider2.addEventListener('mousedown', (e) => {
-//     pressed = true;
-//     startx = e.offsetX - sliderTrack2.offsetLeft ; //получаем начальную позицию мыши
-//     slider2.style.cursor = 'grabbing';
-
-// });
-
-// slider2.addEventListener('mouseenter', () => {
-//     slider2.style.cursor = 'grab'
-// });
-
-// slider2.addEventListener('mouseup', () => {
-//     slider2.style.cursor = 'grab';
-// });
-
-// window.addEventListener('mouseup', () => {
-//     pressed = false;
-// });
-
-// slider2.addEventListener('mousemove', (e) =>{
-//     if(!pressed) return;
-
-//     x = e.offsetX
-
-//     sliderTrack2.style.left = `${x - startx}px`;  //получаем координаты относительно левого края внутреннего блока и вычитаем из смещения родительского блока
-//     checkBoundary2()
-// })
-
-// const checkBoundary2 = () => {  
-//     let outer = slider2.getBoundingClientRect()
-//     let inner = sliderTrack2.getBoundingClientRect()
-
-//     if(parseInt(sliderTrack2.style.left) > 0){
-//         sliderTrack2.style.left = '';
-//     } else if (inner.right < outer.right){
-//         sliderTrack2.style.left = `-${inner.width - outer.width}px`
-//     }
-// }
-
-// // для сенсорных экранов
-// slider2.addEventListener('touchstart', (e) => {   
-//     pressed = true;
-//     startx = e.targetTouches[0].clientX - sliderTrack2.offsetLeft;
-// }, {passive: true});
-
-
-// slider2.addEventListener('touchmove', (e) => {
-//     if(!pressed) return;
-//     x = e.targetTouches[0].clientX;
-
-//     sliderTrack2.style.left = `${x - startx}px`;  
-//     checkBoundary2();
-// }, {passive: true});
+})
