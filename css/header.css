@@ -24,11 +24,12 @@ body{
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5; 
-}
-html, body{
   overflow-x: hidden;
 }
-body._lock{
+html{
+  overflow-x: hidden;
+}
+._lock{
   overflow: hidden;
 }
 .header-image{

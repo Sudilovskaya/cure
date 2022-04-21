@@ -4,6 +4,7 @@ const mobileMenu = document.querySelector('.mobile-menu')
 
 burgerBtn.addEventListener('click', () => {
     document.body.classList.toggle('_lock')
+    document.getElementById('html').classList.toggle('_lock')
     mobileMenu.classList.toggle('_active')
     burgerBtn.classList.toggle('_active')
 })
