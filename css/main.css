@@ -1,8 +1,4 @@
-.main{
-  overflow-x: hidden !important;
-}
 .main-images{
-  overflow-x: hidden !important;
   display: flex;
   justify-content: center;
 }
@@ -121,7 +117,6 @@
 }
 .main_images-group{
   position: relative;
-  overflow-x: hidden !important;
 }
 .main-right-decoration{
   position: absolute;
@@ -163,7 +158,6 @@
   padding-top: 4.5vw;
   margin-left: -5vw;
   /* padding-bottom: 5vw; */
-  overflow-x: hidden !important;
 }
 .main-nails-styles__item{
   cursor: pointer;
@@ -207,9 +201,6 @@
 .image-wrapper{
   position: relative;
   width: 50%;
-}
-.nails-steps{
-  overflow-x: hidden !important;
 }
 .nails_steps-image{
   background-image:url("//images.ctfassets.net/pzzgna09n4z0/2YPxjpfe48qWascM0m42Ke/ece68fdfa93f22222e93e82e3e1144c6/img-step-2-2.jpg?w=1200&fm=webp&q=75");
@@ -443,7 +434,6 @@ transform: translateY(0) rotate(-11deg);
 }
 .bg-images{
   display: flex;
-  overflow-x: hidden !important;
 }
 .bg-image{
   height: 46vw;
