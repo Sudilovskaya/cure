@@ -24,10 +24,13 @@ body{
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5; 
-  overflow-x: hidden !important;
+  /* overflow-x: hidden !important; */
 }
 body._lock{
   overflow: hidden;
+}
+.header{
+  overflow-x: hidden !important;
 }
 .header-image{
   background-image: url('//images.ctfassets.net/pzzgna09n4z0/3z9cRfW6cNvemd8ZphHmKz/8f5e975f06ae08e4c16772557b82fe97/Img_hero.jpg?w=2420&fm=webp&q=75');

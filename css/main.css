@@ -1,8 +1,8 @@
 .main{
   overflow-x: hidden !important;
-  padding-bottom: 2vw;
 }
 .main-images{
+  overflow-x: hidden !important;
   display: flex;
   justify-content: center;
 }
@@ -121,6 +121,7 @@
 }
 .main_images-group{
   position: relative;
+  overflow-x: hidden !important;
 }
 .main-right-decoration{
   position: absolute;
@@ -161,6 +162,8 @@
   justify-content: center;
   padding-top: 4.5vw;
   margin-left: -5vw;
+  /* padding-bottom: 5vw; */
+  overflow-x: hidden !important;
 }
 .main-nails-styles__item{
   cursor: pointer;
@@ -189,6 +192,7 @@
   top: -2.5vw;
   left: 3.3vw;
   opacity: 0;
+  pointer-events: none;
 }
 .circled.cure{
   margin-left: -1.5vw;
@@ -439,6 +443,7 @@ transform: translateY(0) rotate(-11deg);
 }
 .bg-images{
   display: flex;
+  overflow-x: hidden !important;
 }
 .bg-image{
   height: 46vw;

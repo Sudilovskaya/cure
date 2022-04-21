@@ -66,6 +66,7 @@
         flex-direction: column;
         transition: all .4s ease;
         overflow: auto;
+        overflow-x: hidden !important;
       }
       .mobile-menu._active{
         left: 0;
@@ -167,7 +168,7 @@
       position: relative;
       height: 100vw;
     }
-    .main-image, .main-image2, .main-image3{
+    .main-image.quickie, .main-image.classic, .main-image.cure{
      position: absolute;
      height: 90vw;
      width: 75vw;
