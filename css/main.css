@@ -434,6 +434,7 @@ transform: translateY(0) rotate(-11deg);
 }
 .bg-images{
   display: flex;
+  overflow: hidden;
 }
 .bg-image{
   height: 46vw;
