@@ -23,8 +23,10 @@
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" defer></script>
 </head>
 <body>
-  <header class="header">
-    <div class="header-image">
+
+   <header class="header">
+    <div class="container">
+     <div class="header-image">
       <div class="navbar">
       <a href="index.html" class="header-logo">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 133 49" class="logo" data-v-04a0fdec="">
@@ -55,118 +57,129 @@
         <strong class="hero__text-strong text-strong">How it works</strong>
       </div>
     </div>
+    </div>
   </header>
 
-   <div class="menu__nav">
-    <a href="#" class="menu__nav__item">Facial</a>
-    <a href="#" class="menu__nav__item menu__nav__item-active">Nails</a>
-    <a href="#" class="menu__nav__item">Waxing</a>
-  </div>
+
+   <div class="container">
+    <div class="menu__nav">
+      <a href="#" class="menu__nav__item">Facial</a>
+      <a href="#" class="menu__nav__item menu__nav__item-active">Nails</a>
+      <a href="#" class="menu__nav__item">Waxing</a>
+    </div>
+   </div>
   
   <main class="main">
-    <div class="main-images">
-      <div class="main-image _anim-items classic"></div>
-      <div class="main-image _anim-items quickie" ></div>
-      <div class="main-image _anim-items cure"></div>
-    </div>
-    <div class="main__text">
-        <div class="main__steps steps">step 1</div>
-        <h3 class="main__title">Choose <br class="br"> your <span class="line"></span> style </h3> 
-        <div class="main__text-description _anim-items _anim-no-hide">
-          Choice of soak,<br>scrub or mask,<br>and moisturizer
+    <div class="container">
+      <div class="main-images">
+        <div class="main-image _anim-items classic"></div>
+        <div class="main-image _anim-items quickie" ></div>
+        <div class="main-image _anim-items cure"></div>
+      </div>
+      <div class="main__text">
+          <div class="main__steps steps">step 1</div>
+          <h3 class="main__title">Choose <br class="br"> your <span class="line"></span> style </h3> 
+          <div class="main__text-description _anim-items _anim-no-hide">
+            Choice of soak,<br>scrub or mask,<br>and moisturizer
+          </div>
+      </div>
+      <div class="main_images-group">
+        <img src="img/blue-dots-right.png" alt="" class="main-right-decoration _anim-items _anim-no-hide">
+        <img src="img/red-branch.png" alt="" class="main-branch-decoration">
+        <img src="img/green.png" alt="" class="main-green-decoration _anim-items _anim-no-hide">
+      </div>
+      <div class="main-nails-styles">
+        <div data-f="quickie" class="main-nails-styles__item quickie active" >quickie
+          <svg data-v-704009a8="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225 172" class="circled quickie _active" data-v-b8d93cee="">
+            <path fill="none" stroke="#F95B5B" stroke-linecap="round" stroke-width="3" d="M102.203 23.747c-41.697 6.132-71.266 21.52-88.707 46.165-26.161 36.967-6.754 85.309 48.877 96.94 55.632 11.633 136.711-8.7 157.013-65.66C239.69 44.232 172.9-16.848 57.901 7.497" opacity=".6">
+            </path>
+          </svg>
         </div>
-    </div>
-    <div class="main_images-group">
-      <img src="img/blue-dots-right.png" alt="" class="main-right-decoration _anim-items _anim-no-hide">
-      <img src="img/red-branch.png" alt="" class="main-branch-decoration">
-      <img src="img/green.png" alt="" class="main-green-decoration _anim-items _anim-no-hide">
-    </div>
-    <div class="main-nails-styles">
-      <div data-f="quickie" class="main-nails-styles__item quickie active" >quickie
-        <svg data-v-704009a8="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225 172" class="circled quickie _active" data-v-b8d93cee="">
-          <path fill="none" stroke="#F95B5B" stroke-linecap="round" stroke-width="3" d="M102.203 23.747c-41.697 6.132-71.266 21.52-88.707 46.165-26.161 36.967-6.754 85.309 48.877 96.94 55.632 11.633 136.711-8.7 157.013-65.66C239.69 44.232 172.9-16.848 57.901 7.497" opacity=".6">
-          </path>
-        </svg>
-      </div>
-      <div data-f="classic" class="main-nails-styles__item classic" >classic
-        <svg data-v-704009a8="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225 172" class="circled classic" data-v-b8d93cee="">
-          <path fill="none" stroke="#F95B5B" stroke-linecap="round" stroke-width="3" d="M102.203 23.747c-41.697 6.132-71.266 21.52-88.707 46.165-26.161 36.967-6.754 85.309 48.877 96.94 55.632 11.633 136.711-8.7 157.013-65.66C239.69 44.232 172.9-16.848 57.901 7.497" opacity=".6">
-          </path>
-        </svg>
-      </div>
-      <div data-f="cure" class="main-nails-styles__item cure"> cure
-        <svg data-v-704009a8="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225 172" class="circled cure" data-v-b8d93cee="">
-          <path fill="none" stroke="#F95B5B" stroke-linecap="round" stroke-width="3" d="M102.203 23.747c-41.697 6.132-71.266 21.52-88.707 46.165-26.161 36.967-6.754 85.309 48.877 96.94 55.632 11.633 136.711-8.7 157.013-65.66C239.69 44.232 172.9-16.848 57.901 7.497" opacity=".6">
-          </path>
-        </svg>
+        <div data-f="classic" class="main-nails-styles__item classic" >classic
+          <svg data-v-704009a8="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225 172" class="circled classic" data-v-b8d93cee="">
+            <path fill="none" stroke="#F95B5B" stroke-linecap="round" stroke-width="3" d="M102.203 23.747c-41.697 6.132-71.266 21.52-88.707 46.165-26.161 36.967-6.754 85.309 48.877 96.94 55.632 11.633 136.711-8.7 157.013-65.66C239.69 44.232 172.9-16.848 57.901 7.497" opacity=".6">
+            </path>
+          </svg>
+        </div>
+        <div data-f="cure" class="main-nails-styles__item cure"> cure
+          <svg data-v-704009a8="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225 172" class="circled cure" data-v-b8d93cee="">
+            <path fill="none" stroke="#F95B5B" stroke-linecap="round" stroke-width="3" d="M102.203 23.747c-41.697 6.132-71.266 21.52-88.707 46.165-26.161 36.967-6.754 85.309 48.877 96.94 55.632 11.633 136.711-8.7 157.013-65.66C239.69 44.232 172.9-16.848 57.901 7.497" opacity=".6">
+            </path>
+          </svg>
+        </div>
       </div>
     </div>
   </main>
 
   <section class="nails__steps">
-    <div class="nails__steps_step2-row">
-      <div class="image-wrapper">
-        <div class="nails_steps-image _anim-items"></div>
-    </div>
-    <div class="step-2">
-      <div class="nails__step2-wrapper">
-        <div class="nails__step2-text">
-          <div class="nails__step steps _anim-items _anim-no-hide">step 2</div>
-         <div class="text-group">
-          <div class="nails__steps-title title _anim-items _anim-no-hide"> Choose <strong class="nails__steps-text-strong text-strong"> your </strong></div>
-          <div class="nails__steps-title title _anim-items _anim-no-hide">products</div>
-         </div>
-          <div class="link-wrapper _anim-items _anim-no-hide">
-          <a href="#products" class="nails__steps-link _anim-items">See Products</a>
-        </div>
-        </div> 
-    </div>  
-  </div>
-    </div>
-    <div class="nails__steps_step3-row">
-      <div class="nails__step3-wrapper">
-        <div class="nails__step2-text step3-text">
-          <div class="nails__step steps _anim-items _anim-no-hide">step 3</div>
-          <div class="text-group">
-            <div class="nails__steps-title title _anim-items _anim-no-hide"> Add-In Products</div>
-            <div class="nails__steps-title title _anim-items _anim-no-hide">& Add-On </div>
-            <div class="nails__steps-title title _anim-items _anim-no-hide">Services <strong class="nails__step3-text-strong text-strong"> + </strong></div>
-          </div>
-          <div class="link-wrapper _anim-items _anim-no-hide">
-          <span class="nails__steps-link _anim-items nails__steps-link-step3">Check Add-Ins & Add-Ons</span>
-        </div>
-        </div>
-    </div>
-        <div class="nails__steps-images-group">
-          <img src="img/red-flowers.png" alt="" class="image-2-decoration">
-        <div class="nails__steps-image2 _anim-items"></div>
-        <div class="nails__steps-image3 _anim-items"></div>
-        <img src="img/red-dots-left.png" alt="" class="image-3-decoration">
+    <div class="container">
+      <div class="nails__steps_step2-row">
+        <div class="image-wrapper">
+          <div class="nails_steps-image _anim-items"></div>
       </div>
-      
+      <div class="step-2">
+        <div class="nails__step2-wrapper">
+          <div class="nails__step2-text">
+            <div class="nails__step steps _anim-items _anim-no-hide">step 2</div>
+           <div class="text-group">
+            <div class="nails__steps-title title _anim-items _anim-no-hide"> Choose <strong class="nails__steps-text-strong text-strong"> your </strong></div>
+            <div class="nails__steps-title title _anim-items _anim-no-hide">products</div>
+           </div>
+            <div class="link-wrapper _anim-items _anim-no-hide">
+            <a href="#products" class="nails__steps-link _anim-items">See Products</a>
+          </div>
+          </div> 
+      </div>  
     </div>
-    <div class="nails-steps-description">
-      <div class="strong-text-block">
-      <strong class="steps__text-strong _anim-items _anim-no-hide text-strong">Nails. Wax.</strong>
-      <strong class="steps__text-strong _anim-items _anim-no-hide text-strong">We are Cure.</strong>
+      </div>
+      <div class="nails__steps_step3-row">
+        <div class="nails__step3-wrapper">
+          <div class="nails__step2-text step3-text">
+            <div class="nails__step steps _anim-items _anim-no-hide">step 3</div>
+            <div class="text-group">
+              <div class="nails__steps-title title _anim-items _anim-no-hide"> Add-In Products</div>
+              <div class="nails__steps-title title _anim-items _anim-no-hide">& Add-On </div>
+              <div class="nails__steps-title title _anim-items _anim-no-hide">Services <strong class="nails__step3-text-strong text-strong"> + </strong></div>
+            </div>
+            <div class="link-wrapper _anim-items _anim-no-hide">
+            <span class="nails__steps-link _anim-items nails__steps-link-step3">Check Add-Ins & Add-Ons</span>
+          </div>
+          </div>
+      </div>
+          <div class="nails__steps-images-group">
+            <img src="img/red-flowers.png" alt="" class="image-2-decoration">
+          <div class="nails__steps-image2 _anim-items"></div>
+          <div class="nails__steps-image3 _anim-items"></div>
+          <img src="img/red-dots-left.png" alt="" class="image-3-decoration">
+        </div>
+        
+      </div>
+      <div class="nails-steps-description">
+        <div class="strong-text-block">
+        <strong class="steps__text-strong _anim-items _anim-no-hide text-strong">Nails. Wax.</strong>
+        <strong class="steps__text-strong _anim-items _anim-no-hide text-strong">We are Cure.</strong>
+      </div>
+      <div class="nails-steps-privilege _anim-items _anim-no-hide">
+        <p class="nails-steps-privilege-text">We love our Military Families. Now offering 10% off all nail styles to military families.</p>
+      </div>
     </div>
-    <div class="nails-steps-privilege _anim-items _anim-no-hide">
-      <p class="nails-steps-privilege-text">We love our Military Families. Now offering 10% off all nail styles to military families.</p>
     </div>
-  </div>
   </section>
 
-  <div class="bg-images">
-    <div class="image-wrapper">
-      <div class="bg-image _anim-items"></div>
-  </div>
-    <div class="image-wrapper">
-      <div class="bg-image second _anim-items"></div>
+  <div class="container">
+    <div class="bg-images">
+      <div class="image-wrapper">
+        <div class="bg-image _anim-items"></div>
+    </div>
+      <div class="image-wrapper">
+        <div class="bg-image second _anim-items"></div>
+      </div>
     </div>
   </div>
 
 <article class="price-list">
-      <div class="green-wrapper"></div>
+      <div class="container">
+        <div class="green-wrapper"></div>
       <div class="price-list-title-wrapper">
         <p class="price-list-title title _anim-items _anim-no-hide">Choose your style.</p>
       </div>
@@ -287,172 +300,178 @@
 
             <div class="price-list__details">Price for gel</div>
      </div>
+      </div>
   </article>
 
 <article class="sliders" id="products">
-  <p class=" sliders-title _anim-items _anim-no-hide title"> Choose your products </p>
-  <p class="sliders-subtitle _anim-items _anim-no-hide">Our products focus on preventing aging in the places that matter most: hands & feet.</p>
-  <div class="filter-row">
-    <div data-f="all" class="filter-item _active">All</div>
-    <div data-f="soaks" class="filter-item">Soaks</div>
-    <div data-f="scrubs" class="filter-item">Scrubs</div>
-    <div data-f="mask" class="filter-item">Mask</div>
-    <div data-f="moisturizers" class="filter-item">Moisturizers</div>
-  </div>
-
-  <div class="swiper">
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-        <div class="swiper-slide soaks">
-          <div class="product soaks">
-            <div class="product-image product-image1"></div>
-            <div class="product-description">Balance & Moisture</div>
-            <div class="product-title">Many Minerals of Grey</div>
-          </div>
-        </div>
-        <div class="swiper-slide scrubs">
-          <div class="product scrubs">
-            <div class="product-image product-image2"></div>
-          <div class="product-description">Anti-Oxidizing & Anti-Aging</div>
-          <div class="product-title">Berry Preserve</div>
-          </div>
-        </div>
-        <div class="swiper-slide mask">
-          <div class="product mask">
-            <div class="product-image product-image3"></div>
-            <div class="product-description">Sun-Damage & Elasticity</div>
-            <div class="product-title">Minty Matcha</div>
-          </div>
-        </div>
-        <div class="swiper-slide scrubs">
-          <div class="product scrubs">
-            <div class="product-image product-image4"></div>
-            <div class="text-strong add-me-text">Add me</div>
-            <div class="product-description">Tone & Lighten</div>
-            <div class="product-title">Citrus Peel</div>
-          </div>
-        </div>
-        <div class="swiper-slide moisturizers">
-          <div class="product moisturizers">
-            <div class="product-image product-image5"></div>
-            <div class="product-description">Scars & Fine Lines</div>
-            <div class="product-title">Liquid Gold Oil</div>
-          </div>
-        </div>
-        <div class="swiper-slide mask">
-          <div class="product mask">
-            <div class="product-image product-image6"></div>
-            <div class="product-description">Glow & Repair</div>
-            <div class="product-title">Omega Strawberry</div>
-          </div>
-        </div>
-        <div class="swiper-slide moisturizers">
-          <div class="product moisturizers">
-            <div class="product-image product-image7"></div>
-            <div class="text-strong add-me-text">Add me</div>
-            <div class="product-description">Cooling & Soothing </div>
-            <div class="product-title">Skin Haven Lotion</div>
-          </div>
-        </div>
+   <div class="container">
+    <p class=" sliders-title _anim-items _anim-no-hide title"> Choose your products </p>
+    <p class="sliders-subtitle _anim-items _anim-no-hide">Our products focus on preventing aging in the places that matter most: hands & feet.</p>
+    <div class="filter-row">
+      <div data-f="all" class="filter-item _active">All</div>
+      <div data-f="soaks" class="filter-item">Soaks</div>
+      <div data-f="scrubs" class="filter-item">Scrubs</div>
+      <div data-f="mask" class="filter-item">Mask</div>
+      <div data-f="moisturizers" class="filter-item">Moisturizers</div>
     </div>
-  </div>
-
-<p class="sliders-title _anim-items _anim-no-hide title"> Add-ons</p>
- <div class="swiper-container">
-  <div class="swiper-wrapper"> 
-      <div class="swiper-slide">
-        <div class="card">
-          <img src="img/cards/card1.png" alt="" class="card-image"> 
-        <p class="card-title">Paraffin <br> Cure </p>
-        <p class="card-subtitle">Soften & Moisture</p>
-        <p class="card-cost">$10</p>
-        </div>
+  
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+          <div class="swiper-slide soaks">
+            <div class="product soaks">
+              <div class="product-image product-image1"></div>
+              <div class="product-description">Balance & Moisture</div>
+              <div class="product-title">Many Minerals of Grey</div>
+            </div>
+          </div>
+          <div class="swiper-slide scrubs">
+            <div class="product scrubs">
+              <div class="product-image product-image2"></div>
+            <div class="product-description">Anti-Oxidizing & Anti-Aging</div>
+            <div class="product-title">Berry Preserve</div>
+            </div>
+          </div>
+          <div class="swiper-slide mask">
+            <div class="product mask">
+              <div class="product-image product-image3"></div>
+              <div class="product-description">Sun-Damage & Elasticity</div>
+              <div class="product-title">Minty Matcha</div>
+            </div>
+          </div>
+          <div class="swiper-slide scrubs">
+            <div class="product scrubs">
+              <div class="product-image product-image4"></div>
+              <div class="text-strong add-me-text">Add me</div>
+              <div class="product-description">Tone & Lighten</div>
+              <div class="product-title">Citrus Peel</div>
+            </div>
+          </div>
+          <div class="swiper-slide moisturizers">
+            <div class="product moisturizers">
+              <div class="product-image product-image5"></div>
+              <div class="product-description">Scars & Fine Lines</div>
+              <div class="product-title">Liquid Gold Oil</div>
+            </div>
+          </div>
+          <div class="swiper-slide mask">
+            <div class="product mask">
+              <div class="product-image product-image6"></div>
+              <div class="product-description">Glow & Repair</div>
+              <div class="product-title">Omega Strawberry</div>
+            </div>
+          </div>
+          <div class="swiper-slide moisturizers">
+            <div class="product moisturizers">
+              <div class="product-image product-image7"></div>
+              <div class="text-strong add-me-text">Add me</div>
+              <div class="product-description">Cooling & Soothing </div>
+              <div class="product-title">Skin Haven Lotion</div>
+            </div>
+          </div>
       </div>
-      <div class="swiper-slide">
-       <div class="card">
-        <img src="img/cards/card2.png" alt="" class="card-image"> 
-        <p class="card-title">Massage <br> Cure </p>
-        <p class="card-subtitle">Extra 10 Minutes</p>
-        <p class="card-cost">$10</p>
-       </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="card">
-          <img src="img/cards/card3.png" alt="" class="card-image"> 
-          <p class="card-title">Head, Neck, & Shoulder <br> Massage </p>
-          <p class="card-subtitle">10 Minutes</p>
+    </div>
+  
+  <p class="sliders-title _anim-items _anim-no-hide title"> Add-ons</p>
+   <div class="swiper-container">
+    <div class="swiper-wrapper"> 
+        <div class="swiper-slide">
+          <div class="card">
+            <img src="img/cards/card1.png" alt="" class="card-image"> 
+          <p class="card-title">Paraffin <br> Cure </p>
+          <p class="card-subtitle">Soften & Moisture</p>
           <p class="card-cost">$10</p>
+          </div>
         </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="card">
-          <img src="img/cards/card4.png" alt="" class="card-image"> 
-        <p class="card-title">Nail <br> Art </p>
-        <p class="card-cost card-cost-margin">$2 <span> per nail </span></p>
+        <div class="swiper-slide">
+         <div class="card">
+          <img src="img/cards/card2.png" alt="" class="card-image"> 
+          <p class="card-title">Massage <br> Cure </p>
+          <p class="card-subtitle">Extra 10 Minutes</p>
+          <p class="card-cost">$10</p>
+         </div>
         </div>
-      </div>
-      <div class="swiper-slide">
-       <div class="card">
-        <img src="img/cards/card1.png" alt="" class="card-image"> 
-        <p class="card-title">Acrylic <br> Removal </p>
-        <p class="card-cost card-cost-margin">$20</p>
-       </div>
-      </div>
-      <div class="swiper-slide">
-       <div class="card">
-        <img src="img/cards/card6.png" alt="" class="card-image"> 
-        <p class="card-title">Extended <br> Tips </p>
-        <p class="card-subtitle">Aprés Gel-X System</p>
-        <p class="card-cost">$20</p>
-       </div>
-      </div>
-
-  </div>
- </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <img src="img/cards/card3.png" alt="" class="card-image"> 
+            <p class="card-title">Head, Neck, & Shoulder <br> Massage </p>
+            <p class="card-subtitle">10 Minutes</p>
+            <p class="card-cost">$10</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <img src="img/cards/card4.png" alt="" class="card-image"> 
+          <p class="card-title">Nail <br> Art </p>
+          <p class="card-cost card-cost-margin">$2 <span> per nail </span></p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+         <div class="card">
+          <img src="img/cards/card1.png" alt="" class="card-image"> 
+          <p class="card-title">Acrylic <br> Removal </p>
+          <p class="card-cost card-cost-margin">$20</p>
+         </div>
+        </div>
+        <div class="swiper-slide">
+         <div class="card">
+          <img src="img/cards/card6.png" alt="" class="card-image"> 
+          <p class="card-title">Extended <br> Tips </p>
+          <p class="card-subtitle">Aprés Gel-X System</p>
+          <p class="card-cost">$20</p>
+         </div>
+        </div>
+  
+    </div>
+   </div>
+   </div>
 </article>
 
 <section class="cooperation">
-  <div class="cooperation-wrapper">
-    <div class="cooperation-image-bg"></div>
-    <div class="footer-title-wrapper">
-      <p class="cooperation-description">Calling all Nail Techs and Waxing Specialists</p>
-      <div class="footer-title-wrapper2">
-      <p class="cooperation-title _anim-items _anim-no-hide">We invite</p>
-      <p class="cooperation-title _anim-items _anim-no-hide">you to join</p>
-      <p class="cooperation-title _anim-items _anim-no-hide">Team Cure.</p> 
-    </div>
-    </div>      
-      <div class="cooperation-text-group">
-        <div class="cooperation-link-wrapper">
-          <p class="cooperation-link _anim-items _anim-no-hide">Apply Now</p>
-        </div>
-          <div class="cooperation-contact _anim-items _anim-no-hide">
-            <strong class="cooperation-text-strong text-strong">Write Us</strong>
-            <a href="#" class="email-link">wenailusa@gmail.com</a>
+  <div class="container">
+    <div class="cooperation-wrapper">
+      <div class="cooperation-image-bg"></div>
+      <div class="footer-title-wrapper">
+        <p class="cooperation-description">Calling all Nail Techs and Waxing Specialists</p>
+        <div class="footer-title-wrapper2">
+        <p class="cooperation-title _anim-items _anim-no-hide">We invite</p>
+        <p class="cooperation-title _anim-items _anim-no-hide">you to join</p>
+        <p class="cooperation-title _anim-items _anim-no-hide">Team Cure.</p> 
+      </div>
+      </div>      
+        <div class="cooperation-text-group">
+          <div class="cooperation-link-wrapper">
+            <p class="cooperation-link _anim-items _anim-no-hide">Apply Now</p>
           </div>
-    </div>  
+            <div class="cooperation-contact _anim-items _anim-no-hide">
+              <strong class="cooperation-text-strong text-strong">Write Us</strong>
+              <a href="#" class="email-link">wenailusa@gmail.com</a>
+            </div>
+      </div>  
+    </div>
   </div>
 </section>
 
 <footer class="footer">
-  <div class="footer-cols-wrapper">
-    <div class="footer-col-1">
-      <p class="footer-title">Have Questions?</p>
-      <p class="footer-link">Tell us more.</p>
-    </div>
-    <div class="footer-col-2">
-      <div class="footer-text-group1">
-        <a href="#" ><span class="footer-details"> Privacy Policy </span></a>
-        <a href="#" ><span class="footer-details"> Terms of Service </span></a>
+  <div class="container">
+    <div class="footer-cols-wrapper">
+      <div class="footer-col-1">
+        <p class="footer-title">Have Questions?</p>
+        <p class="footer-link">Tell us more.</p>
       </div>
-      <div class="footer-text-group2">
-        <a href="https://www.instagram.com/curenailco" target="_blank"> <span class="footer-details">Instagram </span> </a>
-        <a href="https://www.facebook.com/curenails/" target="_blank"> <span class="footer-details">Facebook </span> </a>
+      <div class="footer-col-2">
+        <div class="footer-text-group1">
+          <a href="#" ><span class="footer-details"> Privacy Policy </span></a>
+          <a href="#" ><span class="footer-details"> Terms of Service </span></a>
+        </div>
+        <div class="footer-text-group2">
+          <a href="https://www.instagram.com/curenailco" target="_blank"> <span class="footer-details">Instagram </span> </a>
+          <a href="https://www.facebook.com/curenails/" target="_blank"> <span class="footer-details">Facebook </span> </a>
+        </div>
       </div>
-    </div>
- </div>
-  <p class="footer-end">Nailed it.</p>
+   </div>
+    <p class="footer-end">Nailed it.</p>
+  </div>
 </footer>
-
 </body>
 </html>
