@@ -154,3 +154,11 @@ filterItems.forEach(item => {
         
     })
 })
+
+let container = document.querySelectorAll('.container');
+let content = document.getElementById('content');
+let cw = content.clientWidth;
+
+container.forEach(elem => {
+    elem.style.width = cw + 'px';
+})
