@@ -155,3 +155,18 @@ filterItems.forEach(item => {
     })
 })
 
+
+window.addEventListener('scroll', () => {
+    const welcomeImage = document.querySelector('.header-image');
+    const windowHeight = window.innerHeight;
+    const relativeHeight = window.scrollY / windowHeight;
+    let zoom;
+
+    zoom = window.scrollY <= windowHeight ? 1 + (Math.floor(relativeHeight * 35000) / 100000) : 1.2;
+
+    if (relativeHeight < 1) {
+        welcomeImage.style.transform = `scale(${ zoom })`;
+        welcomeImage.style.transitionDelay = 'unset';
+        welcomeImage.style.transitionDuration = 'unset';
+    }
+})
